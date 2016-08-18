@@ -2,6 +2,14 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: ociamthesismain.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: theory.aux
-I found no \bibdata command---while reading file ociamthesismain.aux
-I found no \bibstyle command---while reading file ociamthesismain.aux
-(There were 2 error messages)
+A level-1 auxiliary file: systemDevelopment.aux
+A level-1 auxiliary file: droplet.aux
+A level-1 auxiliary file: conclusions.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--empty journal in 3M2009
+Warning--empty publisher in Kleinstreuer2013
+Warning--empty journal in Vyawahare2014
+(There were 3 warnings)

@@ -1,0 +1,89 @@
+\begin{thebibliography}{10}
+
+\bibitem{3M2009}
+3M.
+\newblock {3M Novec 7200 Engineered Fluid}.
+\newblock Datasheet, 2009.
+
+\bibitem{Abate2012a}
+Adam~R. Abate, Pascaline Mary, Volkert van Steijn, and David~A. Weitz.
+\newblock {Experimental validation of plugging during drop formation in a
+  T-junction}.
+\newblock {\em Lab on a Chip}, 12(8):1516, 2012.
+
+\bibitem{bruus2008}
+Henrik Bruus.
+\newblock {\em {Theoretical Microfluidics}}.
+\newblock Oxford ; New York : Oxford University Press, 2008., 2008.
+
+\bibitem{D??azNafr??a2013}
+Lorenzo Capretto, Wei Cheng, Martyn Hill, and Xunli Zhang.
+\newblock {Micromixing within microfluidic devices}.
+\newblock {\em Topics in Current Chemistry}, 304(1):27--68, 2011.
+
+\bibitem{Chong2016}
+Zhuang~Zhi Chong, Say~Hwa Tan, Alfonso~M Ganan-Calvo, Shu~Beng Tor, Ngiap~Hiang
+  Loh, and Nam-Trung Nguyen.
+\newblock {Active droplet generation in microfluidics}.
+\newblock {\em Lab Chip}, 16:35--58, 2016.
+
+\bibitem{Christopher2008}
+Gordon~F. Christopher, N.~Nadia Noharuddin, Joshua~A. Taylor, and Shelley~L.
+  Anna.
+\newblock {Experimental observations of the squeezing-to-dripping transition in
+  T-shaped microfluidic junctions}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 78(3), 2008.
+
+\bibitem{DeMenech2008}
+M.~{De Menech}, P.~Garstecki, F.~Jousse, and H.~a. Stone.
+\newblock {Transition from squeezing to dripping in a microfluidic T-shaped
+  junction}.
+\newblock {\em Journal of Fluid Mechanics}, 595:141--161, 2008.
+
+\bibitem{Garstecki2006}
+Piotr Garstecki, Michael~J. Fuerstman, Howard~A. Stone, and George~M.
+  Whitesides.
+\newblock {Formation of droplets and bubbles in a microfluidic
+  T-junction—scaling and mechanism of break-up}.
+\newblock {\em Lab on a Chip}, 6(3):437, 2006.
+
+\bibitem{Kleinstreuer2013}
+Clement Kleinstreuer.
+\newblock {\em {Microfluidics and Nanofluidics: Theory and Selected
+  Applications: Theory and Selected Applications}}.
+\newblock 2013.
+
+\bibitem{Vyawahare2014}
+{Princeton Microfluidics}.
+\newblock {Microfluidics Bootcamp 2014}.
+\newblock 2014.
+
+\bibitem{Shui2007a}
+Lingling Shui, J.~C~T Eijkel, and Albert van~den Berg.
+\newblock {Multiphase flow in micro- and nanochannels}.
+\newblock {\em Sensors and Actuators, B: Chemical}, 121(1):263--276, 2007.
+
+\bibitem{Shui2007}
+Lingling Shui, Jan C~T Eijkel, and Albert van~den Berg.
+\newblock {Multiphase flow in microfluidic systems - Control and applications
+  of droplets and interfaces}.
+\newblock {\em Advances in Colloid and Interface Science}, 133(1):35--49, 2007.
+
+\bibitem{Ward2005}
+Thomas Ward, Magalie Faivre, Manouk Abkarian, and Howard~A. Stone.
+\newblock {Microfluidic flow focusing: Drop size and scaling in pressure versus
+  flow-rate-driven pumping}.
+\newblock {\em Electrophoresis}, 26(19):3716--3724, 2005.
+
+\bibitem{Yang2010}
+Chun~Guang Yang, Zhang~Run Xu, and Jian~Hua Wang.
+\newblock {Manipulation of droplets in microfluidic systems}.
+\newblock {\em TrAC - Trends in Analytical Chemistry}, 29(2):141--157, 2010.
+
+\bibitem{Zhao2011}
+Chun~Xia Zhao and Anton P~J Middelberg.
+\newblock {Two-phase microfluidic flows}.
+\newblock {\em Chemical Engineering Science}, 66(7):1394--1411, 2011.
+
+\end{thebibliography}

@@ -16,26 +16,54 @@ BELOW IS A GOOD EXAMPLE OF A BRIEF DEVICE GENERATION PROCEDURE:
 \end{comment}
 \subsection{Experimental Procedure}
 
-Droplet formation was captured on a high speed camera at 2.5k to 20k frames per second. The applied control pressure was held constant for the continuous phase at a nominal value of 400mbar while varying the discontinuous phase control pressure. Discontinuous phase control pressure was varied at intervals of $\approx$10mbar above and below the nominal 400mbar until droplet formation ceased due to the onset of backflow or jetting, for low or high pressures, respectively. The captured images were then analyzed using a custom imageJ script to determine droplet length, $L$, and position, $X$, along an arbitrarily defined axis parallel to the geometry's outlet channel.
+Droplet formation was captured on a high speed camera at 2.5k to 20k frames per second. The applied control pressure was held constant for the continuous phase at a nominal value of 40, 60 and 80 mbar while varying the discontinuous phase control pressure. Discontinuous phase control pressure was varied at intervals of $\approx$5mbar until droplet formation ceased due to the onset of backflow or instability, for low or high pressures, respectively. The captured images were then analyzed using a custom imageJ script to determine droplet length, $L$, and position, $X$, along an arbitrarily defined axis parallel to the geometry's outlet channel.
  
 \section{Results}
 
-For both X-junction and T-junction channel geometries $L$ is plotted as a function of the applied control pressure ratios, $\frac{P_{H_2O}}{P_Oil}$, shown in Figure \vref{fig:regimes}. Outer Ca values are calculated at the transition between flow regimes given an interfacial tension of $\gamma = 2.87 \times 10^{-3}\frac{N}{m}$, continuous phase viscosity of $\mu = 1.24 \times 10^{-3} Pa \cdot s$, and mean velocities, $u$, as determined by droplet x-position.
+For the T-junction channel geometry described the dimensionless droplet ratio of droplet length, $L$, over channel width, $W$, is plotted as a function of the applied control pressure ratios, $\frac{P_{H_2O}}{P_Oil}$, shown in Figure \vref{fig:lwvpr}. Error bars have been calculated by standard deviation of measured droplet length which results in error equal to or smaller than the plotted points and thus not shown.
 
 \begin{figure}
 \centering 
-\includegraphics[width=01.0\columnwidth]{regimes.PNG} 
-\caption[Droplet Length as a Function of Applied Control Pressure Ratio]{Log-Log plots of droplet length as a function of the applied control pressure ratio for X-junction(top) and T-junction(bottom) geometry. Select images are shown for each geometry showing the case of quasi-equilibrium (bottom-1), droplet formation within the dripping regime (top-1, bottom-2), droplet formation within the squeezing regime (top-2, bottom-3), migration of the 'pinch-point' along the longitudinal axis (top-3, bottom-4), and onset of jetting (top-4).} 
-\label{fig:regimes} 
+\includegraphics[width=01.0\columnwidth]{lwvpr.PNG} 
+\caption[Droplet Length as a Function of Applied Control Pressure Ratio]{Log-log (left) and linear(right) plots of droplet length as a function of the applied control pressure ratio for T-junction geometry.} 
+\label{fig:lwvpr} 
 \end{figure}
 
+Outer Ca values are calculated given an interfacial tension of $\gamma = 2.87 \times 10^{-3}\frac{N}{m}$, continuous phase viscosity of $\mu = 1.24 \times 10^{-3} Pa \cdot s$, \cite{3M2009} and mean velocity, $u$, as determined by droplet position over consecutive frames as shown in Equation \vref{eq:velocity}.
+
+\begin{equation}
+[u] = \Big[\frac{pixels}{frame}\Big] \Big[\frac{frames}{sec}\Big] \Big[\frac{meters}{pixel}\Big] = \Big[\frac{meters}{sec}\Big]
+\label{eq:velocity}
+\end{equation}
+
+Droplet length is plotted as a function of capillary number as shown in Figure \vref{fig:regimes2} for each of the applied continuous pressures. Images of droplet formation are shown within the squeezing and dripping regimes for each control pressure. The image shown was captured one frame prior to droplet formation. 
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.75\columnwidth]{regimes2.PNG} 
+\caption[Droplet length as a function of Capillary number across squeezing and dripping regimes]{Top: Droplet length as a function of Capillary number across squeezing and dripping regimes, the transition between dripping and squeezing regimes is marked by vertical dashed lines. Bottom: Typical images of droplet elongation just prior to formation.} 
+\label{fig:regimes2} 
+\end{figure}
+
+\clearpage
+
+In characterization of the transition from dripping to squeezing it may be useful to investigate the critical capillary number as a function of the continuous phase pressure, shown in Figure \vref{fig:CrCaABline}.
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.75\columnwidth]{CrCaABline.PNG} 
+\caption[Critical capillary number as a function of continuous phase applied pressure]{Critical capillary number as a function of continuous phase applied pressure} 
+\label{fig:CrCaABline} 
+\end{figure}
 
 
 \clearpage
 
 \section{Discussion}
 
-Previous work has been done to establish specific flow regimes in which droplets are formed in T-junction geometry by both modeling and experimental investigations \cite{Abate2012a},\cite{DeMenech2008},\cite{Garstecki2006}. The findings suggest that two stable droplet formation regimes exist (i) \emph{dripping} - in which the viscous forces associated with the continuous phase flow are significantly large to cause shearing of the immiscible thread and the production of a droplet prior to blocking the outlet channel and (ii) \emph{squeezing} - in which the immiscible thread blocks the majority of the outlet channel prior to collapse and droplets are formed by a squeezing effect due to the pressure build up caused by the blocked channel. Investigation into the factors, often expressed as the Capillary Number, \emph{Ca}, dimensionless group, that dictate regime change is generally conducted using volumetric controlled flow systems, most often syringe pumps. It has been shown that pressure controlled flow systems produce droplets in a behavior unique from volumetricly controlled systems, despite the accepted generalization that pressure and flow are linearly related in single phase systems \cite{Ward2005}, shown without permission in Figure \vref{fig:pvq}. Here for the first time, experimental data is shown presenting droplet formation as defined by L/w as a function of control-pressure ratio with a specific emphasis on flow regime and corresponding \emph{Ca} values.
+Previous work has been done to establish specific flow regimes in which droplets are formed in T-junction geometry by both numeric modeling and experimental investigations \cite{Abate2012a},\cite{DeMenech2008},\cite{Garstecki2006}. \emph{However, to the best of the author's knowledge there has been no record of experimental observations demonstrating the regime transition from squeezing to dripping in a pressure-driven flow system.} This, despite the fact that there have been documented dissimilarities in volumetric versus pressure-driven flow in droplet formation\cite{Ward2005}, and that there may be advantages in droplet monodispersity in pressure-driven systems \cite{Christopher2008}\cite{Li2014a}. 
+
+Previous findings suggest that two stable droplet formation regimes exist \emph{dripping} and \emph{squeezing}. Investigation into the factors, often expressed as the Capillary Number, \emph{Ca}, dimensionless group, that dictate regime change is generally conducted using volumetric controlled flow systems, most often syringe pumps. It has been shown that pressure controlled flow systems produce droplets in a behavior unique from volumetricly controlled systems, despite the accepted generalization that pressure and flow are linearly related in single phase systems \cite{Ward2005}, shown without permission in Figure \vref{fig:pvq}. Here for the first time, experimental data is shown presenting droplet formation as defined by L/w as a function of control-pressure ratio with a specific emphasis on flow regime and corresponding \emph{Ca} values.
 
 \begin{figure}[h]
 \centering 
@@ -138,4 +166,17 @@ range from Ca ~ $10^{-3}$ to $10^1$ for flow rates accessible using syringe pump
 \end{figure}
 
 
+\begin{comment}
+
+Outer Ca values are calculated at the transition between flow regimes given an interfacial tension of $\gamma = 2.87 \times 10^{-3}\frac{N}{m}$, continuous phase viscosity of $\mu = 1.24 \times 10^{-3} Pa \cdot s$, and mean velocities, $u$, as determined by droplet x-position.
+
+\begin{figure}
+\centering 
+\includegraphics[width=01.0\columnwidth]{regimes.PNG} 
+\caption[Droplet Length as a Function of Applied Control Pressure Ratio]{Log-Log plots of droplet length as a function of the applied control pressure ratio for X-junction(top) and T-junction(bottom) geometry. Select images are shown for each geometry showing the case of quasi-equilibrium (bottom-1), droplet formation within the dripping regime (top-1, bottom-2), droplet formation within the squeezing regime (top-2, bottom-3), migration of the 'pinch-point' along the longitudinal axis (top-3, bottom-4), and onset of jetting (top-4).} 
+\label{fig:regimes} 
+\end{figure}
+
+
+\end{comment}
 

@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Background Theory}{2}
+\contentsline {section}{\numberline {2.1}Droplet microfluidics Overview}{3}
+\contentsline {paragraph}{Navier-Stokes}{4}
+\contentsline {paragraph}{Dimensionless Groups}{5}
+\contentsline {section}{\numberline {2.2}Hydrodynamic Resistance}{6}
+\contentsline {chapter}{\numberline {3}System Development}{9}
+\contentsline {section}{\numberline {3.1} Design}{9}
+\contentsline {section}{\numberline {3.2}Characterization}{9}
+\contentsline {chapter}{\numberline {4}System Application - Droplet Microluidics}{12}
+\contentsline {section}{\numberline {4.1}Aims}{12}
+\contentsline {section}{\numberline {4.2}Methods}{12}
+\contentsline {subsection}{\numberline {4.2.1}Device Generation}{12}
+\contentsline {subsection}{\numberline {4.2.2}Experimental Procedure}{12}
+\contentsline {section}{\numberline {4.3}Results}{13}
+\contentsline {section}{\numberline {4.4}Discussion}{16}
+\contentsline {paragraph}{No-Flow}{22}
+\contentsline {paragraph}{Dripping}{22}
+\contentsline {paragraph}{Squeezing}{22}
+\contentsline {chapter}{\numberline {5}Conclusions}{24}
+\contentsline {chapter}{\numberline {A}Arduino Code}{25}
+\contentsline {chapter}{\numberline {B}Sample Title}{29}
+\contentsline {chapter}{Bibliography}{30}
