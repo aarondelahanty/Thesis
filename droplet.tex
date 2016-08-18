@@ -1,0 +1,141 @@
+\chapter{System Application - Droplet Microluidics}
+\section{Aims}
+The application of the PDFC to droplet microfluidics serves two purposes. First, it verifies that the system is functioning as intended for use as a research tool. Second, it allows the characterization of droplet formation by a pressure driven flow in conjunction with X and T-junction geometry, an area currently underdeveloped \cite{Christopher2008}. These aims can be fulfilled by the following two objectives:
+
+\begin{enumerate}
+\item Determine how applied pressure determine droplet formation regime
+\item Relate applied pressure to droplet scaling law \cite{Zhao2011}
+\end{enumerate}
+\section{Methods}
+\subsection{Device Generation}
+\begin{comment}
+BELOW IS A GOOD EXAMPLE OF A BRIEF DEVICE GENERATION PROCEDURE:
+
+"The microfluidic device is fabricated using conventional soft lithography methods.11 A
+50 lm thick SU-8 photoresist was spin-coated onto a RCA-1 cleaned silicon wafer and patterned with UV light and a contact mask. Unpolymerized photoresist was removed during de- velopment using SU-8 developer. Poly (dimethyl siloxane), or PDMS (Sylgard 184, Dow Corn- ing) was poured onto the SU-8 mold to form the fluidic channels. After cutting the devices off of the mold and punching connection holes, the devices were treated with oxygen plasma and bonded to a slab of PDMS. Flow was driven using digital pressure regulators (SMC Corpora- tion, Noblesville, IN, USA) with an output pressure range of 0.005-0.1 MPa, and controlled via a custom LabView interface" - \cite{Simon2012}
+\end{comment}
+\subsection{Experimental Procedure}
+
+Droplet formation was captured on a high speed camera at 2.5k to 20k frames per second. The applied control pressure was held constant for the continuous phase at a nominal value of 400mbar while varying the discontinuous phase control pressure. Discontinuous phase control pressure was varied at intervals of $\approx$10mbar above and below the nominal 400mbar until droplet formation ceased due to the onset of backflow or jetting, for low or high pressures, respectively. The captured images were then analyzed using a custom imageJ script to determine droplet length, $L$, and position, $X$, along an arbitrarily defined axis parallel to the geometry's outlet channel.
+ 
+\section{Results}
+
+For both X-junction and T-junction channel geometries $L$ is plotted as a function of the applied control pressure ratios, $\frac{P_{H_2O}}{P_Oil}$, shown in Figure \vref{fig:regimes}. Outer Ca values are calculated at the transition between flow regimes given an interfacial tension of $\gamma = 2.87 \times 10^{-3}\frac{N}{m}$, continuous phase viscosity of $\mu = 1.24 \times 10^{-3} Pa \cdot s$, and mean velocities, $u$, as determined by droplet x-position.
+
+\begin{figure}
+\centering 
+\includegraphics[width=01.0\columnwidth]{regimes.PNG} 
+\caption[Droplet Length as a Function of Applied Control Pressure Ratio]{Log-Log plots of droplet length as a function of the applied control pressure ratio for X-junction(top) and T-junction(bottom) geometry. Select images are shown for each geometry showing the case of quasi-equilibrium (bottom-1), droplet formation within the dripping regime (top-1, bottom-2), droplet formation within the squeezing regime (top-2, bottom-3), migration of the 'pinch-point' along the longitudinal axis (top-3, bottom-4), and onset of jetting (top-4).} 
+\label{fig:regimes} 
+\end{figure}
+
+
+
+\clearpage
+
+\section{Discussion}
+
+Previous work has been done to establish specific flow regimes in which droplets are formed in T-junction geometry by both modeling and experimental investigations \cite{Abate2012a},\cite{DeMenech2008},\cite{Garstecki2006}. The findings suggest that two stable droplet formation regimes exist (i) \emph{dripping} - in which the viscous forces associated with the continuous phase flow are significantly large to cause shearing of the immiscible thread and the production of a droplet prior to blocking the outlet channel and (ii) \emph{squeezing} - in which the immiscible thread blocks the majority of the outlet channel prior to collapse and droplets are formed by a squeezing effect due to the pressure build up caused by the blocked channel. Investigation into the factors, often expressed as the Capillary Number, \emph{Ca}, dimensionless group, that dictate regime change is generally conducted using volumetric controlled flow systems, most often syringe pumps. It has been shown that pressure controlled flow systems produce droplets in a behavior unique from volumetricly controlled systems, despite the accepted generalization that pressure and flow are linearly related in single phase systems \cite{Ward2005}, shown without permission in Figure \vref{fig:pvq}. Here for the first time, experimental data is shown presenting droplet formation as defined by L/w as a function of control-pressure ratio with a specific emphasis on flow regime and corresponding \emph{Ca} values.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=01.0\columnwidth]{pvq.PNG} 
+\caption[Droplet Length as a Function of Applied Control Pressure Ratio]{Used without permission, taken directly from \cite{Ward2005} }
+\label{fig:pvq} 
+\end{figure}
+
+In this experiment both interfacial tension and viscosities are assumed constant and therefore the only variable affecting the \emph{Ca} value is the mean velocity which in this case is approximated by direct measurement of the droplet velocity. It is expected that there is some numerical difference between the velocity of the droplets and the velocity of the continuous phase but we assume this difference is sufficiently small as to be neglected\cite{Ward2005} [could use additional  REF]. In the system developed here, the only inputs used to manipulate flow behavior are the two applied pressures. Therefore, in order to characterize the system's flow regimes it is logical to determine the relationship between applied pressures and the resulting droplet velocity. Here, velocity is plotted as a function of the applied pressure ratio for both T and X-junctions as shown in Figure \vref{fig:vel_pr}.  Ward determined the relationship for their system as shown in Figure \vref{fig:wardVelocity}. (XX we need to do the same)
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=01.0\columnwidth]{vel_pr.PNG} 
+\caption[Droplet Velocity as a function of Applied Control Pressure Ratio]{Droplet velocity for both T and X-junctions }
+\label{fig:vel_pr} 
+\end{figure}
+
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.75\columnwidth]{wardVelocity.PNG} 
+\caption[Velocity, U as a function of applied pressure]{Used without permission, taken directly from \cite{Ward2005} }
+\label{fig:wardVelocity} 
+\end{figure}
+
+\clearpage
+
+Two important observations:
+\begin{enumerate}
+\item The system used here is operating at velocities approximately a magnitude greater than Ward's system (1m/s vs 1cm/s)
+\item The relationship between velocity and applied pressure ratios are different. Our system shows a relatively linear and slightly downward trending velocity while in Ward's case velocity is relatively flat then at some critical pressure increases exponentially.
+\end{enumerate}
+
+
+From the droplet velocity Ca and Re values can be determined. Again, Ca is considerably higher than reported by others \cite{DeMenech2008}, \cite{Ward2005} . A plot of droplet length versus Ca value is shown in Figure \vref{fig:ca_pr}.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.750\columnwidth]{ca_pr.PNG} 
+\caption[Capillary Number as a function of Applied Control Pressure Ratio]{Log-Log plot Capillary Number as a function of Applied Control Pressure Ratio }
+\label{fig:ca_pr} 
+\end{figure}
+
+
+Using the determined velocities Ca and Re numbers are calculated as shown in Figure \vref{ReCa_calc}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=01.0\columnwidth]{ReCa_calc.PNG} 
+\caption[Re Ca Calculations]{Re Ca Calculations }
+\label{fig:ReCa_calc} 
+\end{figure}
+
+
+\clearpage
+
+In order to qualitatively characterize the formation of droplets across the entire range of functional pressure ratios, the following section will describe the system behavior at the states of no-flow, dripping, squeezing, and jetting. Due to the strong similarities in droplet-formation behavior between the X-junction and T-junction geometry they will be discussed in general terms with specific metrics given for each case.
+
+
+
+\paragraph{No-Flow}
+As the system is moved towards the lowest operational pressure ratios, the aqueous phase comes to a a quasi equilibrium no-flow state. As previously reported by Ward et al cite{Ward2005} . If the pressure ratio is decreased any further(either by increasing $P_{Oil}$ or decreasing $P_{H_2O}$) back-flow will occur, in which the continuous phase begins displacing the aqueous phase upstream towards the reservoir. This quasi equilibrium state may be described as a balance of forces between the pressure of the two phases and the Laplace pressure differential across the liquid-liquid interface, described as shown in Equation \vref{eq:noflow}.
+
+\begin{equation}
+P_{H_2O*} + P_{Laplace} = P_{Oil*} 
+\label{eq:noflow}
+\end{equation}
+
+Where Laplace pressure can be roughly approximated given $\gamma$ is the interfacial tension between the two phases, $r$ is the radius of curvature of the interface as:
+\begin{equation}
+ P_{Laplace} = \frac{2 \gamma}{r}
+\label{eq:laplace}
+\end{equation}
+
+It should be noted that here $P_{H_2O*}$ and $P_{Oil*}$ represent the pressures of the two phases local to the X or T junction and that there is some unknown pressure drop between the applied control pressures at the inlet reservoirs and these local pressures. This pressure drop is dependent on device geometry as well as solution viscosity and can be determined by Hagan-Poiseuille approximations (XX - needs to be done). 
+ 
+\paragraph{Dripping}
+
+As the control pressure applied to the discontinuous phase is increased beyond the \emph{no-flow} state the immiscible thread begins to extend into the device's channel junction. 
+
+
+\paragraph{Squeezing}
+
+The pinch point moving further downstream is a manifestation of the increases in tangental viscous forces relative to inertial forces (Ca). The Ca value increases due to the increase in velocity as the interfacial tension and viscosity are both constant. The viscous forces acting tangentially to the discontinuous phase boundary elongates the immiscible thread before the combined effect of increased plugging pressure and inertial forces finally dominate leading to droplet formation.
+
+
+\begin{comment}
+a note on the difference of capillary numbers:
+"In microfluidic droplet formation, capillary numbers typically
+range from Ca ~ $10^{-3}$ to $10^1$ for flow rates accessible using syringe pumps."\cite{Christopher2007}
+\end{comment}
+
+
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.750\columnwidth]{constP.PNG} 
+\caption[Regime Change at varying flows]{Droplet length at varying flowrates} 
+\label{fig:constP} 
+\end{figure}
+
+
+

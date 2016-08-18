@@ -1,0 +1,171 @@
+\chapter{Background Theory}
+
+Development of a pneumatic pressure driven flow system for use in microfluidic research requires a firm grasp on the transition from 'macro' fluidics to microfluidics. The system operates across a great range of scales drawing and compressing air from a room of several cubic meters that is subsequently used to provide flow in channels of only a few micrometers. Following the flow path of the system - compressed air is filtered and directed via large diameter $(~5mm)$ tubing to reagent columns of large diameter $(~2cm)$, where the compressed air acts on the reagent to produce flow through smaller tubing $(<1mm)$ before finally transitioning into the microfluidic device where channel dimensions are on the order of magnitude of micrometers. This range of scale is illustrated in Figure \vref{fig:systemScale}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.60\columnwidth]{systemScale.PNG} 
+\caption[System Scales]{Illustration of the scales involved in the system.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\label{fig:systemScale} 
+\end{figure}
+
+\clearpage
+
+The importance of forces that act on fluids therefore dramatically changes from the macro- to the microscale. With downscaling, the buoyancy, gravitational and inertial forces are less and less important and viscous and interfacial forces become more and more predominant.\cite{Shui2007}
+
+
+\section{Droplet microfluidics Overview}
+Phase is a distinct state of matter in a system; matter that is identical in chemical composition and physical state and separated from other material by the phase boundary. Multiphase fluids are those in which there exist at least two different fluids in a system with different chemical composi- tions ? liquid/liquid, or with different physical states ? gas/ liquid.\cite{Shui2007}. Here we neglect consideration of gas-liquid two phase systems. 
+
+
+\cite{Yang2010,Shui2007a,Zhao2011}
+
+
+The study of fluid dynamics requires the analysis of individual fluid forces (such as gravity, inertial, viscous, and interfacial forces) and an understanding of how these forces combine to define fluid behavior. In order to understand the transition from large dimension $(>1mm)$ to small dimension $(<1mm)$ systems it may be useful to understand how these forces relate to system dimensions by the way of scaling laws. Some fluid forces such as inertial forces and gravity forces are dependent on the \emph{volume} of fluid involved. Other fluid forces are intrinsically defined by the \emph{surface area} of the fluids such as viscous forces and interfacial forces. More broadly speaking each of various fluid forces may be dependent on the different orders of characteristic length, $l$. For example, inertial force is dependent on density, $\rho$, which may be expressed as mass per volume or mass per $l^3$, as shown in Equation \vref{eq:inertia}. Similarly, interfacial tension is often defined as the partial differential of the Gibb's free energy over area, where the area term may be expressed in terms of $l^2$, shown in Equation \vref{eq:interfacial}.
+
+
+\begin{equation}
+i = \rho \nu^2 = \frac{m}{V}\nu^2 = \frac{m}{(l^3)}\nu^2 
+\label{eq:inertia}
+\end{equation}
+
+%Probably wont use this eqn:
+%\begin{equation}
+%P = \rho g h = \frac{m}{V}g h
+%\label{eq:pressure}
+%\end{equation}
+
+\begin{equation}
+\gamma = \frac{\partial G}{\partial A} = \frac{\partial G}{\partial (l^2)}
+\label{eq:interfacial}
+\end{equation}
+
+
+Consider the relative effect these individual forces have on the overall fluid behavior in which the volume dependent forces have an $l^3$ term and the surface forces have a $l^2$ term, as shown in Equation \vref{eq:scalingLaw} \cite{bruus2008}
+
+\begin{equation}
+\frac{Surface Forces}{Volume Forces} \propto \frac{l^2}{l^3} = l^{-1} \lim_{l \to 0}  \rightarrow \infty
+\label{eq:scalingLaw}
+\end{equation}
+
+From this comes the realization that as systems are miniaturized towards a theoretical zero-dimension the surface forces begin play an exponentially larger effect relative to the volume forces, illustrated in Figure \vref{fig:scalingLaw}.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.60\columnwidth]{scalingLaw.PNG} 
+\caption[Law of Scales for microfluidic forces]{Illustration of the law of scales as fluid systems are miniaturized.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\label{fig:scalingLaw} 
+\end{figure}
+
+\paragraph{Navier-Stokes} Early attempts at approximating fluid flow by Bernoulli and his pupil Euler completely neglected the viscosity term (an aforementioned surface force) in their mathematical expressions. In systems of small dimensions the viscosity effects are dominant and these approximations are inadequate. The Navier-Stokes expression accommodates viscous forces and is essentially a statement of force balance between inertial, pressure and viscous forces, shown in Equation . In most microfluidic systems the inertial forces are small enough that they may be neglected and the expression reduces to the statement that the net pressure forces are equal to the negative net viscous forces \cite{Vyawahare2014}.
+
+\begin{equation}
+\rho \Bigg(\frac {\partial \nu}{\partial t} + \nu \cdot \nabla \nu \Bigg) = - \nabla P+ f +\eta \nabla^2 \nu + \nabla \sigma
+\label{eq:navierStokes}
+\end{equation}
+
+\begin{equation}
+\frac {\partial \nu}{\partial t} + \nabla \cdot  ( \rho \nu) = 0
+\label{eq:navierCOM}
+\end{equation}
+
+\begin{equation}
+\rho \frac {\partial \nu}{\partial t} = - \nabla P+ f +\eta \nabla^2 \nu + \nabla \sigma
+\label{eq:navierCOM}
+\end{equation}
+
+\^ above equations from \cite{Shui2007}
+
+\paragraph{Dimensionless Groups} In many cases fluid flow at the microscale can be best categorized by comparing \emph{dimensionless groups} driven by fluid parameters such as viscosity, velocity, density and system geometry, as is the case of the dimensionless group known as Reynold's Number \emph{(Re)} shown in Equation ~\vref{eq:reynolds} . Regardless of the specific fluid or geometric parameters, systems with similar \emph{Re}  numbers general behave similarly - making it  powerful tool in characterization of a microfluidic system. The \emph{Re} value can be described in real world terms as a relation between the inertial forces and viscosity forces at play in a system. At the microscale viscous forces are dominant over inertial forces thus the \emph{Re} value is typically very low, indicating flow is laminar \cite{Kleinstreuer2013}.
+
+\begin{equation}
+Re =\frac {\rho \nu L}{\mu}
+\label{eq:reynolds}
+\end{equation}
+
+Where $\rho$ is fluid density, $\nu$ is fluid velocity, $L$ is characteristic length, and $\mu$ is fluid viscosity. The \emph{Re}  value dictates whether the system will be within the laminar or turbulent regime. \emph{Re} values tend to be small $(< 5)$ for microfluidic systems because the spatial scale, and therefore characteristic length, are small while fluid viscosity is constant relative to larger-scale systems \cite{D??azNafr??a2013}. As the majority of microfluidic systems feature small \emph{Re} numbers the dimensionless group becomes less valuable in the differentiation and categorization of different systems. \\
+For water in a straight micro- or nanochannel with a diameter between 100 nm and 100 ?m, where ?(H2O)=1.025×10? 3 Pa s, ?(H2O)=103 kg m? 3 and v=1 mm s?1, the calculated Reynolds number lies between 10? 1 and 10? 4. For a gas, oxygen for instance, ?(O2)= 20.317×10? 6 Pa s and ?(O2)=1.429 kg m? 3, the Reynolds number in the same system ranges from 10?5 to 10?2. Therefore, inertial forces are overwhelmed by interfacial forces in microfluidic devices, and laminar flow is expected in micro- and nanochannels, and not turbulent or random flow\cite{Shui2007}.\\
+Other dimensionless groups such as Capillary Number, Peclet Number,  Viscosity Ratios, Flowrate Ratios are commonly used to describe microfluidic systems - specifically droplet-producing geometries such as the device inestigater in section 'asdafs'. \cite{DeMenech2008}
+
+The Capillary number \emph{(Ca)} is a dimensionless group that compares the relative contribution of interfacial forces and viscous forces. The capillary number is especially useful in discussion of two-phase microfluidic systems because it neglects any inertial forces and is capable of describing droplet formation behavior as influenced by solution viscosity and surface energies.  The \emph{Ca} is defined as shown in Equation \vref{eq:ca} \cite{D??azNafr??a2013}.
+
+\begin{equation}
+Ca =\frac {\mu u}{\gamma}
+\label{eq:ca}
+\end{equation}
+
+Where $\mu$ is defined as the viscosity of the continuous phase, $u$ is the mean fluid velocity, and $\gamma$ is the interfacial tension between the discontinuous and continuous phases. The viscous forces and interfacial forces determining fluid behavior are generally understood to act tangentially and normal to the two-phase interface, respectively. Viscous forces along the droplet surface work in elongation of surface of the droplet where as interfacial forces work to minimize the interfacial are. These two opposing behaviors when acting in different ratios dictate the droplet behavior as categorized by the different fluid regimes dripping, squeezing, jetting(XX?)\cite{Shui2007}.
+
+\section{Hydrodynamic Resistance}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=01.0\columnwidth]{resistanceSystem.PNG} 
+\caption[Hydraulic Resistance of System]{The microfluidic system detailed from the reagent water column to the waste reservoir.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+\label{fig:resistanceSystem} 
+\end{figure}
+
+
+$\Delta P = R_{HYD} Q$
+
+$Q_1 = Q_2 = Q_3 = Q_4$
+
+
+
+$R_{HYD} = R_1 + R_2 + R_3$
+
+$R_1 = R_3 = \frac{8 \eta L}{\pi r^4}$
+
+$R_2 = \frac{28.4 \eta L}{ h^4}$
+
+
+
+For the purpose of quantifying the contribution to total pressure drop of the droplet-maker relative to the inlet and outlet tubing the following values were applied to first solve for the flowrate at an arbitray pressure of 500mbar. Assuming that $P_4$ is equivalent to atmospheric pressure, 0 Pa, and $L_1 = 0.100m$, $L_2=0.001m$, $n=1cP = 0.001 Pa-s$, $r=0.0025m$ and $h=0.000030m$. Take $P_1 = 500mbar = 50kPa$ which is mid operational range for the system.
+
+
+$R_1 = R_3 = \frac{8 (0.001) (0.100)}{\pi 0.0025^4} = 6.52  \times 10^6 \frac{kg}{m^4s}$
+
+$R_2 = \frac{28.4 (0.001) (0.001)}{ 0.000030^4} = 3.51 \times 10^{13}\frac{kg}{m^4s}$
+
+Clearly the resistance seen over the length of the simplified droplet-maker is several orders of magnitude greater than the resistance of the input/output lines. The total pressure $(P_4 - P_1)$ is known (it is the command pressure of the PDFC) and the individual pressure differentials can be calculated as follows:
+\\
+
+$P_4 - P_1 = (2 (\frac{8 \eta L_1}{\pi r^4}) + \frac{28.4 \eta L_2}{ h^4}) Q$
+\\
+
+First solving for the flowrate:
+\\
+\\
+$Q = \frac{P_4 - P_1 }{(2 (\frac{8 \eta L_1}{\pi r^4}) + \frac{28.4 \eta L_2}{ h^4})}$
+\\
+\\
+$Q = \frac{50,000} {(2 (6.52*10^6) + 3.51*10^{13})} = 1.42  \times 10^{-9} \frac{m^3}{s} $
+\\
+\\
+$Q =  1.42*10^{-9} \frac{m^3}{s}  \times  \frac{1000 L}{m^3} = 1.42  \times 10^{-6} \frac{L}{s}$ 
+
+Assuming that the system is at steady state and therefore the microfluidic structure (tubing and PDMS) is not expanding due to internal pressure we can infer that by conservation of mass and assumed incompressible fluids that the volumetric flowrate is constant across each of the system pressure points shown in Figure ~\vref{fig:resistanceSystem}. We can then produce the following system of equations:
+\\
+$P_2 - P_1 = (R_1) Q$
+\\
+$P_3- P_2 = (R_2)Q$
+\\
+$P_4 - P_3 = (R_3) Q$
+\\
+Applying the previously calculated resistances and flowrate the following pressure differentials are obtained:
+\\
+$P_2 - P_1 = 9.26 \times 10^{-3 }\frac{kg}{m \cdot s^2} =  9.26 \times 10^{-3} Pa$
+\\
+$P_3- P_2 = 49.84 \times 10^{3 }\frac{kg}{m \cdot s^2} =  49.84 \times 10^{3} Pa$
+\\
+$P_4 - P_3 = 9.26 \times 10^{-3 }\frac{kg}{m \cdot s^2} =  9.26 \times 10^{-3} Pa$
+\\
+
+At these values (and given these are all simple linear equations this should be the case regardless of flow viscosity, etc.) the pressure drop across the micro-scale device comprises of:
+
+$\frac{P_3-P_2}{P_4-P_1} = \frac{49.84 \times 10^{3}}{50.00 \times 10^{3}} = 0.9968$
+
+And so it may be appropriate to neglect the pressure drops across the tubing and assume that the PDFC applied pressure is equivalent to the pressure applied across the droplet-maker. This can be further justified by the fact that the control precision of the system (a few mbar) is larger than the negligible pressure differentials of the tubing sections. XX consider modeling this using the same modeling software used for the BD lab (especially modeling the pressure drops across the microfluidic device itself.
+
+
+

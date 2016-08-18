@@ -1,0 +1,214 @@
+\chapter{Arduino Code}
+\scriptsize
+
+\begin{lstlisting}
+
+    
+//Aaron Delahanty
+//2224135D@student.gla.ac.uk
+//University of Glasgow
+//21Oct2015
+//Electronic Flow Controller
+
+//This application (sketch) is intended to be the sole sketch responsible for measuring 
+//and regulating pressure in the Electronic Flow Control (EFC) system being developed 
+//for T.Franke's microfluidic group. The objective of the sketch is to faciliate
+//communication with two types of integrated chips (i) Analog Microselectronic's AMS5915
+//pressure sensors,and (ii) Microchip Technology Inc.'s MCP4921 DAC.
+
+//In addition to this sketch the system will use a LabView VI to set the desired 
+//pressure values by DAC, and display the measured pressure for the 4 discrete channels
+//This communication will be facilated by serial communication over USB.
+
+//Revision Notes:
+//02192016  - Removed Volmeter functionality
+//          - Removed All Delays
+//          - 4th Channel DAC is faulting (output is always 1V)
+
+
+//Wire.h is the arduino library for I2C/TWI comm
+#include <Wire.h>
+#include <SPI.h>
+
+//Define variables used for conversion of pressure units from raw counts mbar.
+    int p_min;
+    int p_max;
+    int digoutp_min;
+    int digoutp_max;
+
+//Define array for pressure channel comaprison and final output
+//Comparison is used to determine whether the high range 1000mbar or high resolution 
+//350mbar sensor should be used
+    float p_comp[8];
+    float p_out[4];
+
+//Prior to sending the 12bit input which will drive the T2000 pressure regulators
+//the DAC needs to receive 4 configuration bits
+//Bit 15 - 0 = write to DAC, 1 = ignore command
+//Bit 14 - BUF; 1 = buffer v_ref, 0 = bypass buffer
+//Bit 13 - GA; 1 = v_out is 1X v_ref, 0 = vout is 2X v_ref
+//Bit 12 - SHDN; 1 = active, 0 = shutdown DAC
+
+//Default configuration bits set to [0,1,1,1]
+    unsigned int Config = B0111;
+
+void setup()
+{
+    //Set baud rate to 9600 
+    Serial.begin(9600);
+    // join i2c bus
+    Wire.begin(); 
+    // join SPI bus
+    SPI.begin();
+}
+
+void loop()
+{
+
+//START DAC CODE:
+
+ // check serial 
+
+  if ( Serial.available() ){
+    // cast the string read in an integer 
+    String p_write = Serial.readString();
+
+  int commaIndex1 = p_write.indexOf(',');
+  int commaIndex2 = p_write.indexOf(',',commaIndex1+1);
+  int commaIndex3 = p_write.indexOf(',',commaIndex2+1);
+
+
+  String P1s = p_write.substring(0,commaIndex1);
+  String P2s = p_write.substring(commaIndex1+1,commaIndex2);
+  String P3s = p_write.substring(commaIndex2+1,commaIndex3);
+  String P4s = p_write.substring(commaIndex3+1);
+
+  unsigned int a[3];
+  a[0]=P1s.toInt();
+  a[1]=P2s.toInt();
+  a[2]=P3s.toInt();
+  a[3]=P4s.toInt();
+
+
+    float cs[3];
+    for (int i = 0; i <= 3; i++)
+       {
+        cs[i] = i+7;
+        pinMode(cs[i], OUTPUT);
+        
+
+        
+        //Command is the variable sent to DAC to drive pressure regulator
+        //The commmand variable is comprised of the 4 configuration bits and 12 data bits
+        unsigned int command;
+        //Shift the config bits 12 positions leftward, augment with the a[i] pressure value 
+        //in volts
+        command = ( Config << 12 | a[i]);
+
+        //Write command to each ith DAQ
+        SPI.beginTransaction(SPISettings(20000000, MSBFIRST, SPI_MODE0));
+        //Set ith output pin to LOW, in order to accept write command
+        digitalWrite(cs[i], LOW);
+        //SPI.transfer function is only capable of sending 8bits at a time
+        //The 16bit command is therefore split into a high and low byte
+        int high = highByte(command);
+        int low = lowByte(command);
+        SPI.transfer(high);
+        SPI.transfer(low);
+        SPI.endTransaction();
+        //Set ith pin HIGH to end write command
+        digitalWrite(cs[i], HIGH);
+        //Optional print for debugging
+        //Serial.println("16bit command sent:");
+        //Serial.println(value,BIN);
+        }
+  }
+
+
+//END DAC CODE
+
+//START PRESSURE SENSOR CODE:
+
+  //Define buffer to hold sampled values
+  byte buffer[4];
+
+
+  for (int addr = 1; addr <= 8; addr++)
+    {
+        //Pressure sensor addresses have been configured to 1 through 8.
+        //Sensors 1,2,3,4 are high range 1000mbar
+        if (addr <= 4)
+          {
+            //Set conversion constants for AMS 5915-1000-D
+            p_min = 0;
+            p_max = 1000;
+            digoutp_min = 1638;
+            digoutp_max = 14745;
+          }
+
+        //Sensors 5,6,7,8 are high resolution 350mbar
+        else
+          {
+            //Set conversion constants for AMS 5915-350-D-B
+            p_min = 0;
+            p_max = 350;
+            digoutp_min = 1638;
+            digoutp_max = 14745;
+          }
+
+        //Wire.requestFrom(address, quantity)
+        //address: the 7-bit address of the device to request bytes from
+        //quantity: the number of bytes to request
+        //request four bytes from sensor (first 2 are pressure, second 2 are temp)
+        int n = Wire.requestFrom (addr, 4);
+    
+        //Ensure response is 4byte
+        if(n == 4)
+          {
+          
+            Wire.readBytes (buffer, 4);
+        
+            unsigned int p_raw = word (buffer[0], buffer[1]);     // word(high,low)
+            unsigned int t_raw = word (buffer[2], buffer[3]);
+        
+            // note that the next bit operations works best with "unsigned int", not with "int"
+            p_raw &= 0x3FFF;    // 14bits pressure data
+            t_raw >>= 5 ;       // 11bits temeperature data, shift them in position
+        
+            
+            // convert raw pressure to mbar (equation and constants from datasheet)
+            float pressure = ((( (float) p_raw - digoutp_min ) / ((digoutp_max - digoutp_min) / (p_max - p_min ))) + p_min );
+        
+            // convert raw temperature to degC (equation and constants from datasheet)
+            float temperature = (( (float) t_raw * 200.0 ) / 2048.0 ) - 50.0;
+        
+            // with the pressure comparison array with all sensor's outputs
+            p_comp[addr-1] = pressure;
+          }
+
+        //If no response is present, or response is not 4bytes
+        else
+          {
+          Serial.println ("Error, no sensor found");
+          }
+    }
+
+      
+   int i;
+   for (i = 0; i <= 3; i++)
+     {
+        if (p_comp[i]> 350) 
+          {
+            p_out[i] = p_comp[i];
+          }
+        else 
+          {
+           p_out[i] = p_comp[i+4];
+          }
+        Serial.println(p_out[i]);
+     }
+// END PRESSURE SENSOR CODE
+
+}
+    \end{lstlisting}
+
