@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  18 AUG 2016 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  18 AUG 2016 19:32
 entering extended mode
 **./ociamthesismain.tex
 (ociamthesismain.tex
@@ -207,7 +207,16 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
 \verbatim@line=\toks29
 \verbatim@in@stream=\read1
-) (ociamthesismain.aux (abstract.aux) (introduction.aux) (theory.aux
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count118
+\float@exts=\toks30
+\float@box=\box30
+\@float@everytoks=\toks31
+\@floatcapt=\box31
+) (ociamthesismain.aux (abstract.aux) (introduction.aux)
+(theory.aux
 
 LaTeX Warning: Label `eq:navierCOM' multiply defined.
 
@@ -218,32 +227,32 @@ LaTeX Warning: Label `fig:pneumaticSchematic' multiply defined.
 ) (droplet.aux) (conclusions.aux) (appendix1.aux) (appendix2.aux))
 \openout1 = `ociamthesismain.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 ("C:\Users\Aaron Delahanty\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
+\scratchcounter=\count119
 \scratchdimen=\dimen126
-\scratchbox=\box30
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count121
+\scratchbox=\box32
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count122
 \MPscratchDim=\dimen127
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks33
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
 
@@ -288,14 +297,15 @@ Package grfext Info: Graphics extension search list:
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count124
+\c@lstlisting=\count125
  <UoGlogo.PNG, id=1, 317.988pt x 99.7326pt>
 File: UoGlogo.PNG Graphic file (type png)
 
 <use UoGlogo.PNG>
-Package pdftex.def Info: UoGlogo.PNG used on input line 51.
+Package pdftex.def Info: UoGlogo.PNG used on input line 53.
 (pdftex.def)             Requested size: 216.81pt x 67.99988pt.
  [1
 
@@ -459,52 +469,55 @@ Package pdftex.def Info: CrCaABline.PNG used on input line 54.
 (pdftex.def)             Requested size: 325.215pt x 341.47838pt.
  [15
 
- <./CrCaABline.PNG>] <pvq.PNG, id=96, 977.6525pt x 581.17125pt>
-File: pvq.PNG Graphic file (type png)
- <use pvq.PNG>
-Package pdftex.def Info: pvq.PNG used on input line 70.
-(pdftex.def)             Requested size: 433.62pt x 257.7735pt.
+ <./CrCaABline.PNG>] <menechtransition.PNG, id=96, 496.10344pt x 346.29375pt>
+File: menechtransition.PNG Graphic file (type png)
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<vel_pr.PNG, id=97, 576.65437pt x 406.51875pt>
-File: vel_pr.PNG Graphic file (type png)
- <use vel_pr.PNG>
-Package pdftex.def Info: vel_pr.PNG used on input line 79.
-(pdftex.def)             Requested size: 433.62pt x 305.69469pt.
+<use menechtransition.PNG>
+Package pdftex.def Info: menechtransition.PNG used on input line 70.
+(pdftex.def)             Requested size: 433.62pt x 302.67867pt.
  [16
 
-]
+ <./menechtransition.PNG>] <pvq.PNG, id=101, 977.6525pt x 581.17125pt>
+File: pvq.PNG Graphic file (type png)
+ <use pvq.PNG>
+Package pdftex.def Info: pvq.PNG used on input line 80.
+(pdftex.def)             Requested size: 433.62pt x 257.7735pt.
+
+<vel_pr.PNG, id=102, 576.65437pt x 406.51875pt>
+File: vel_pr.PNG Graphic file (type png)
+ <use vel_pr.PNG>
+Package pdftex.def Info: vel_pr.PNG used on input line 89.
+(pdftex.def)             Requested size: 433.62pt x 305.69469pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<wardVelocity.PNG, id=101, 484.81125pt x 586.19pt>
+<wardVelocity.PNG, id=103, 484.81125pt x 586.19pt>
 File: wardVelocity.PNG Graphic file (type png)
  <use wardVelocity.PNG>
-Package pdftex.def Info: wardVelocity.PNG used on input line 87.
+Package pdftex.def Info: wardVelocity.PNG used on input line 97.
 (pdftex.def)             Requested size: 325.215pt x 393.23721pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./pvq.PNG>] [18 <./vel_pr.PNG>] [19 <./wardVelocity.PNG>] <ca_pr.PNG, id=114, 489.32813pt x 462.97969pt>
+[17 <./pvq.PNG>] [18 <./vel_pr.PNG>] [19 <./wardVelocity.PNG>] <ca_pr.PNG, id=116, 489.32813pt x 462.97969pt>
 File: ca_pr.PNG Graphic file (type png)
 
 <use ca_pr.PNG>
-Package pdftex.def Info: ca_pr.PNG used on input line 105.
+Package pdftex.def Info: ca_pr.PNG used on input line 115.
 (pdftex.def)             Requested size: 325.215pt x 307.70807pt.
 
 
-LaTeX Warning: Reference `ReCa_calc' on page 20 undefined on input line 111.
+LaTeX Warning: Reference `ReCa_calc' on page 20 undefined on input line 121.
 
 
-LaTeX Warning: Reference `ReCa_calc' on page 20 undefined on input line 111.
+LaTeX Warning: Reference `ReCa_calc' on page 20 undefined on input line 121.
 
-<ReCa_calc.PNG, id=115, 872.25874pt x 577.15625pt>
+<ReCa_calc.PNG, id=117, 872.25874pt x 577.15625pt>
 File: ReCa_calc.PNG Graphic file (type png)
  <use ReCa_calc.PNG>
-Package pdftex.def Info: ReCa_calc.PNG used on input line 115.
+Package pdftex.def Info: ReCa_calc.PNG used on input line 125.
 (pdftex.def)             Requested size: 433.62pt x 286.91295pt.
 
 
@@ -512,10 +525,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [20
 
- <./ca_pr.PNG>] [21 <./ReCa_calc.PNG>] <constP.PNG, id=125, 660.4675pt x 638.385pt>
+ <./ca_pr.PNG>] [21 <./ReCa_calc.PNG>] <constP.PNG, id=127, 660.4675pt x 638.385pt>
 File: constP.PNG Graphic file (type png)
  <use constP.PNG>
-Package pdftex.def Info: constP.PNG used on input line 163.
+Package pdftex.def Info: constP.PNG used on input line 173.
 (pdftex.def)             Requested size: 325.215pt x 314.35045pt.
 
 
@@ -567,13 +580,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5354 strings out of 493334
- 78161 string characters out of 3136640
- 297075 words of memory out of 3000000
- 8742 multiletter control sequences out of 15000+200000
+ 5410 strings out of 493334
+ 78962 string characters out of 3136640
+ 298611 words of memory out of 3000000
+ 8793 multiletter control sequences out of 15000+200000
  11623 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,5n,42p,1326b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,5n,42p,1221b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
@@ -583,9 +596,9 @@ cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ociamthesismain.pdf (35 pages, 1208913 bytes).
+Output written on ociamthesismain.pdf (35 pages, 1281758 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 203 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
