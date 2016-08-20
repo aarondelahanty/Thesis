@@ -9,14 +9,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{13}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Droplet length as a function of Capillary number across squeezing and dripping regimes}}{14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{15}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Polydispersity}}{15}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Menech Regime Transition}}{16}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{17}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Droplet Velocity as a function of Applied Control Pressure Ratio}}{18}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Velocity, U as a function of applied pressure}}{19}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Capillary Number as a function of Applied Control Pressure Ratio}}{20}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Re Ca Calculations}}{21}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Regime Change at varying flows}}{23}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{17}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Corrected capillary number as a function of continuous phase applied pressure}}{18}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Droplet Velocity as a function of Applied Control Pressure Ratio}}{19}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Velocity, U as a function of applied pressure}}{20}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Capillary Number as a function of Applied Control Pressure Ratio}}{21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Re Ca Calculations}}{22}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Regime Change at varying flows}}{24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces LabVIEW Frontend}}{30}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces LabVIEW Backend True}}{31}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces LabVIEW Backend False}}{32}
