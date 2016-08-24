@@ -35,6 +35,11 @@ Gordon~F. Christopher, N.~Nadia Noharuddin, Joshua~A. Taylor, and Shelley~L.
 \newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
   Physics}, 78(3), 2008.
 
+\bibitem{Churski2013}
+Krzysztof Churski, Michal Nowacki, Piotr~M. Korczyk, and Piotr Garstecki.
+\newblock {Simple modular systems for generation of droplets on demand}.
+\newblock {\em Lab on a Chip}, 13(18):3689--3697, 2013.
+
 \bibitem{DeMenech2008}
 M.~{De Menech}, P.~Garstecki, F.~Jousse, and H.~a. Stone.
 \newblock {Transition from squeezing to dripping in a microfluidic T-shaped
@@ -65,6 +70,11 @@ Zida Li, Sze~Yi Mak, Alban Sauret, and Ho~Cheung Shum.
 \newblock {Microfluidics Bootcamp 2014}.
 \newblock 2014.
 
+\bibitem{Schmid2014c}
+Lothar Schmid and Thomas Franke.
+\newblock {Acoustic modulation of droplet size in a T-junction}.
+\newblock {\em Applied Physics Letters}, 104(13):133501 p.1--4, 2014.
+
 \bibitem{Shui2007a}
 Lingling Shui, J.~C~T Eijkel, and Albert van~den Berg.
 \newblock {Multiphase flow in micro- and nanochannels}.
@@ -75,6 +85,18 @@ Lingling Shui, Jan C~T Eijkel, and Albert van~den Berg.
 \newblock {Multiphase flow in microfluidic systems - Control and applications
   of droplets and interfaces}.
 \newblock {\em Advances in Colloid and Interface Science}, 133(1):35--49, 2007.
+
+\bibitem{Stone2004}
+H~A Stone, A~D Stroock, and A~Ajdari.
+\newblock {ENGINEERING FLOWS IN SMALL DEVICESMicrofluidics Toward a
+  Lab-on-a-Chip}.
+\newblock {\em Annual Review of Fluid Mechanics}, 36(1):381--411, 2004.
+
+\bibitem{Stroock2002}
+A.D. Stroock and G.M. Whitesides.
+\newblock {Components for integrated poly (dimethylsiloxane) microfluidic
+  systems}.
+\newblock {\em Electrophoresis}, 23(20):3461--3473, 2002.
 
 \bibitem{Ward2005}
 Thomas Ward, Magalie Faivre, Manouk Abkarian, and Howard~A. Stone.

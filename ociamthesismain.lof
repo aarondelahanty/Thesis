@@ -1,26 +1,29 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces System Scales}}{2}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Law of Scales for microfluidic forces}}{4}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Hydraulic Resistance of System}}{7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Communications flowchart for operation of the PDFC}}{3}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pneumatic Schematic of PDFC channel}}{4}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces PDFC time response}}{6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces PDFC accuracy and inter-channel variation}}{7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Communications flowchart for operation of the PDFC}}{10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pneumatic Schematic of PDFC channel}}{11}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Scales}}{8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Hydraulic Resistance of System}}{13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{13}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Droplet length as a function of Capillary number across squeezing and dripping regimes}}{14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Polydispersity}}{15}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Menech Regime Transition}}{16}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{17}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Corrected capillary number as a function of continuous phase applied pressure}}{18}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Droplet Velocity as a function of Applied Control Pressure Ratio}}{19}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Velocity, U as a function of applied pressure}}{20}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Capillary Number as a function of Applied Control Pressure Ratio}}{21}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Re Ca Calculations}}{22}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Regime Change at varying flows}}{24}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Droplet length as a function of Capillary number across squeezing and dripping regimes}}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Polydispersity}}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Menech Regime Transition}}{21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pressure Balance at no-flow condition.}}{23}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Corrected capillary number as a function of continuous phase applied pressure}}{24}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Droplet Velocity as a function of Applied Control Pressure Ratio}}{25}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Velocity, U as a function of applied pressure}}{26}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Regime Change at varying flows}}{28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces LabVIEW Frontend}}{30}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces LabVIEW Backend True}}{31}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces LabVIEW Backend False}}{32}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces LabVIEW Frontend}}{34}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces LabVIEW Backend True}}{35}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces LabVIEW Backend False}}{36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Polydispersity at CA = 0.014}}{38}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Polydispersity at CA = 0.018}}{39}

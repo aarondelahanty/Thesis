@@ -1,23 +1,25 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Background Theory}{2}
-\contentsline {section}{\numberline {2.1}Droplet microfluidics Overview}{3}
-\contentsline {paragraph}{Navier-Stokes}{4}
-\contentsline {paragraph}{Dimensionless Groups}{5}
-\contentsline {section}{\numberline {2.2}Hydrodynamic Resistance}{6}
-\contentsline {chapter}{\numberline {3}System Development}{9}
-\contentsline {section}{\numberline {3.1} Design}{9}
-\contentsline {section}{\numberline {3.2}Characterization}{9}
-\contentsline {chapter}{\numberline {4}System Application - Droplet Microluidics}{12}
-\contentsline {section}{\numberline {4.1}Aims}{12}
-\contentsline {section}{\numberline {4.2}Methods}{12}
-\contentsline {subsection}{\numberline {4.2.1}Device Generation}{12}
-\contentsline {subsection}{\numberline {4.2.2}Experimental Procedure}{12}
-\contentsline {section}{\numberline {4.3}Results}{13}
-\contentsline {section}{\numberline {4.4}Discussion}{16}
-\contentsline {paragraph}{No-Flow}{23}
-\contentsline {paragraph}{Dripping}{23}
-\contentsline {paragraph}{Squeezing}{23}
-\contentsline {chapter}{\numberline {5}Conclusions}{25}
-\contentsline {chapter}{\numberline {A}Arduino Code}{26}
-\contentsline {chapter}{\numberline {B}LabVIEW VI}{30}
-\contentsline {chapter}{Bibliography}{33}
+\contentsline {chapter}{\numberline {2}System Development}{2}
+\contentsline {section}{\numberline {2.1}Design}{2}
+\contentsline {section}{\numberline {2.2}Characterization}{5}
+\contentsline {chapter}{\numberline {3}Background Theory}{8}
+\contentsline {section}{\numberline {3.1}Droplet microfluidics Overview}{9}
+\contentsline {paragraph}{Navier-Stokes}{10}
+\contentsline {paragraph}{Dimensionless Groups}{10}
+\contentsline {section}{\numberline {3.2}Determining System Flowrates}{11}
+\contentsline {paragraph}{Hydraulic Resistance}{12}
+\contentsline {chapter}{\numberline {4}System Application - Droplet Microluidics}{15}
+\contentsline {section}{\numberline {4.1}Aims}{15}
+\contentsline {section}{\numberline {4.2}Methods}{15}
+\contentsline {subsection}{\numberline {4.2.1}Device Generation}{15}
+\contentsline {subsection}{\numberline {4.2.2}Experimental Procedure}{16}
+\contentsline {section}{\numberline {4.3}Results}{16}
+\contentsline {section}{\numberline {4.4}Discussion}{21}
+\contentsline {paragraph}{No-Flow}{27}
+\contentsline {paragraph}{Dripping}{27}
+\contentsline {paragraph}{Squeezing}{27}
+\contentsline {chapter}{\numberline {5}Conclusions}{29}
+\contentsline {chapter}{\numberline {A}Arduino Code}{30}
+\contentsline {chapter}{\numberline {B}LabVIEW VI}{34}
+\contentsline {chapter}{\numberline {C}Polydispersity Analysis}{37}
+\contentsline {chapter}{Bibliography}{40}

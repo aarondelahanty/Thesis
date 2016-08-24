@@ -48,14 +48,7 @@ Consider the relative effect these individual forces have on the overall fluid b
 \label{eq:scalingLaw}
 \end{equation}
 
-From this comes the realization that as systems are miniaturized towards a theoretical zero-dimension the surface forces begin play an exponentially larger effect relative to the volume forces, illustrated in Figure \vref{fig:scalingLaw}.
-
-\begin{figure}[h]
-\centering 
-\includegraphics[width=0.60\columnwidth]{scalingLaw.PNG} 
-\caption[Law of Scales for microfluidic forces]{Illustration of the law of scales as fluid systems are miniaturized.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
-\label{fig:scalingLaw} 
-\end{figure}
+From this comes the realization that as systems are miniaturized towards a theoretical zero-dimension the surface forces begin play an exponentially larger effect relative to the volume forces.
 
 \paragraph{Navier-Stokes} Early attempts at approximating fluid flow by Bernoulli and his pupil Euler completely neglected the viscosity term (an aforementioned surface force) in their mathematical expressions. In systems of small dimensions the viscosity effects are dominant and these approximations are inadequate. The Navier-Stokes expression accommodates viscous forces and is essentially a statement of force balance between inertial, pressure and viscous forces, shown in Equation . In most microfluidic systems the inertial forces are small enough that they may be neglected and the expression reduces to the statement that the net pressure forces are equal to the negative net viscous forces \cite{Vyawahare2014}.
 
@@ -83,9 +76,7 @@ Re =\frac {\rho \nu L}{\mu}
 \label{eq:reynolds}
 \end{equation}
 
-Where $\rho$ is fluid density, $\nu$ is fluid velocity, $L$ is characteristic length, and $\mu$ is fluid viscosity. The \emph{Re}  value dictates whether the system will be within the laminar or turbulent regime. \emph{Re} values tend to be small $(< 5)$ for microfluidic systems because the spatial scale, and therefore characteristic length, are small while fluid viscosity is constant relative to larger-scale systems \cite{D??azNafr??a2013}. As the majority of microfluidic systems feature small \emph{Re} numbers the dimensionless group becomes less valuable in the differentiation and categorization of different systems. \\
-For water in a straight micro- or nanochannel with a diameter between 100 nm and 100 ?m, where ?(H2O)=1.025×10? 3 Pa s, ?(H2O)=103 kg m? 3 and v=1 mm s?1, the calculated Reynolds number lies between 10? 1 and 10? 4. For a gas, oxygen for instance, ?(O2)= 20.317×10? 6 Pa s and ?(O2)=1.429 kg m? 3, the Reynolds number in the same system ranges from 10?5 to 10?2. Therefore, inertial forces are overwhelmed by interfacial forces in microfluidic devices, and laminar flow is expected in micro- and nanochannels, and not turbulent or random flow\cite{Shui2007}.\\
-Other dimensionless groups such as Capillary Number, Peclet Number,  Viscosity Ratios, Flowrate Ratios are commonly used to describe microfluidic systems - specifically droplet-producing geometries such as the device inestigater in section 'asdafs'. \cite{DeMenech2008}
+Where $\rho$ is fluid density, $\nu$ is fluid velocity, $L$ is characteristic length, and $\mu$ is fluid viscosity. The \emph{Re} value dictates whether the system will be within the laminar or turbulent regime. \emph{Re} values tend to be small $(< 1)$ for microfluidic systems because the spatial scales, and therefore characteristic length, are small while fluid viscosity is constant relative to larger-scale systems \cite{D??azNafr??a2013}. As the majority of microfluidic systems feature small \emph{Re} numbers inertial forces are overwhelmed by interfacial forces in resulting in laminar flow and the dimensionless group becomes less valuable in the differentiation and categorization of different systems\cite{Shui2007}.
 
 The Capillary number \emph{(Ca)} is a dimensionless group that compares the relative contribution of interfacial forces and viscous forces. The capillary number is especially useful in discussion of two-phase microfluidic systems because it neglects any inertial forces and is capable of describing droplet formation behavior as influenced by solution viscosity and surface energies.  The \emph{Ca} is defined as shown in Equation \vref{eq:ca} \cite{D??azNafr??a2013}.
 
@@ -98,76 +89,90 @@ Where $\mu$ is defined as the viscosity of the continuous phase, $u$ is the mean
 
 Two stable droplet formation regimes exist (i) \emph{dripping} - in which the viscous forces associated with the continuous phase flow are significantly large to cause shearing of the immiscible thread and the production of a droplet prior to blocking the outlet channel and (ii) \emph{squeezing} - in which the immiscible thread blocks the majority of the outlet channel prior to collapse and droplets are formed by a squeezing effect due to the pressure build up caused by the blocked channel.
 
-\section{Hydrodynamic Resistance}
+\section{Determining System Flowrates}
 
-\begin{figure}[h]
+One of the challenges in using pressure-driven flows for microfluidic research is the difficulty in determining local fluid velocities and flowrates within the microfluidic device. Several approaches are available to approximate the local device flow rates:
+\begin{enumerate}
+\item Experimentally: once the system is primed and running the waste reservoir can be weighed over some time interval, $t$, to determine the accumulation of fluid mass, $M$. Assuming the density of reagents is known, $\rho$, the mean flowrate, $Q (m^3s^{-1})$, can be calculated as $Q = \frac{M}{\rho t}$.
+\item Experimentally: while running, a visual indicator (such as beads, or droplets) can be measured by high speed camera to obtain an object velocity, $V$. Assuming the cross-section of the channel is known, $A$, the flowrate can be calculated as $Q = V \times A$.
+\item Numerical Approximation: Assuming that all system dimensions and applied pressures are known, flowrates can be approximated by the analogous use of Ohm's Law, $\Delta V=IR$. Where voltage, $V$, current, $I$, and electrical resistance, $R$, are analogous to pressure, flow, and hydraulic resistance, respectively.
+\end{enumerate}
+
+
+\paragraph{Hydraulic Resistance} In order to numerically approximate the flowrate of microfluidic systems by use of hydraulic resistance a fundamental understanding of the Hagen-Poiseuille law is required. As previously stated, pressure, flowrate, and hydraulic resistance are analogous to Ohm's law as shown in Equation \vref{eq:hagenPoiseuille} \cite{Bruus2008}.
+
+\begin{equation}
+\Delta p  = R_{hyd} Q
+\label{eq:hagenPoiseuille}
+\end{equation}
+
+The SI units of Hagan-Poiseuille are as shown in \vref{eq:hpUnits}.
+
+\begin{equation}
+[Q] = \frac{m^3}{s} \qquad [\Delta P] = Pa = \frac{kg}{m s^2}  \qquad [R_{hyd}]= \frac{kg}{m^4 s}
+\label{eq:hpUnits}
+\end{equation}
+The hydraulic resistance varies based on specific channel geometry but the presence of a length to the fourth power is universal. This suggests that as channel dimensions increase the resistance decreases in a manor proportional to the dimensional change to the fourth power. This proportionality can be used to simplify the overal system considerably. Consider the simple generic system as shown in Figure \vref{fig:resistanceSystem}.
+
+
+
+\begin{figure}[H]
 \centering 
 \includegraphics[width=01.0\columnwidth]{resistanceSystem.PNG} 
 \caption[Hydraulic Resistance of System]{The microfluidic system detailed from the reagent water column to the waste reservoir.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
 \label{fig:resistanceSystem} 
 \end{figure}
 
+The fluidic resistance present in the reagent reservoirs and tubing leading to the microfluidic device contribute to overall system resistance, and therefore flowrate. However, if the reservoir and tubing widths are substantially larger than the microfluidic device's channels the resistance and therefore contribution to system's pressure loss may be neglected.
 
-$\Delta P = R_{HYD} Q$
+For the purpose of quantifying the contribution to total pressure loss of tubing in a generic system the following arbitrary values are applied to first solve for the flowrate at an arbitrary applied pressure of 500mbar. Assume that $P_4$ is equivalent to atmospheric pressure, 0 Pa, and $L_1=L_3= 0.500 \ m$, $L_2=0.010 \ m$, viscosity $n=1 \ cP = 0.001 \ Pa \ s$, tube radius$r=0.00025 \ m$ and channel height $h=0.00005m$. Take $P_1 = 500 \ mbar = 50 \ kPa$ which is mid operational range for the system.
 
-$Q_1 = Q_2 = Q_3 = Q_4$
+Consider the simple case shown in Figure \vref{fig:resistanceSystem}, and that hydraulic resistances in straight circular and square channels can be approximated as shown in Equations \vref{eq:resCirc} and \vref{eq:resSquare}, respectively.
 
+\begin{equation}
+R_1 = R_3 = \frac{8 \eta L}{\pi r^4}= \frac{8 (0.001) (0.500)}{\pi 0.00025^4} = 3.26  \times 10^7 \frac{kg}{m^4s}
+\label{eq:resCirc}
+\end{equation}
 
-
-$R_{HYD} = R_1 + R_2 + R_3$
-
-$R_1 = R_3 = \frac{8 \eta L}{\pi r^4}$
-
-$R_2 = \frac{28.4 \eta L}{ h^4}$
-
-
-
-For the purpose of quantifying the contribution to total pressure drop of the droplet-maker relative to the inlet and outlet tubing the following values were applied to first solve for the flowrate at an arbitray pressure of 500mbar. Assuming that $P_4$ is equivalent to atmospheric pressure, 0 Pa, and $L_1 = 0.100m$, $L_2=0.001m$, $n=1cP = 0.001 Pa-s$, $r=0.0025m$ and $h=0.000030m$. Take $P_1 = 500mbar = 50kPa$ which is mid operational range for the system.
-
-
-$R_1 = R_3 = \frac{8 (0.001) (0.100)}{\pi 0.0025^4} = 6.52  \times 10^6 \frac{kg}{m^4s}$
-
-$R_2 = \frac{28.4 (0.001) (0.001)}{ 0.000030^4} = 3.51 \times 10^{13}\frac{kg}{m^4s}$
-
-Clearly the resistance seen over the length of the simplified droplet-maker is several orders of magnitude greater than the resistance of the input/output lines. The total pressure $(P_4 - P_1)$ is known (it is the command pressure of the PDFC) and the individual pressure differentials can be calculated as follows:
-\\
-
-$P_4 - P_1 = (2 (\frac{8 \eta L_1}{\pi r^4}) + \frac{28.4 \eta L_2}{ h^4}) Q$
-\\
-
-First solving for the flowrate:
-\\
-\\
-$Q = \frac{P_4 - P_1 }{(2 (\frac{8 \eta L_1}{\pi r^4}) + \frac{28.4 \eta L_2}{ h^4})}$
-\\
-\\
-$Q = \frac{50,000} {(2 (6.52*10^6) + 3.51*10^{13})} = 1.42  \times 10^{-9} \frac{m^3}{s} $
-\\
-\\
-$Q =  1.42*10^{-9} \frac{m^3}{s}  \times  \frac{1000 L}{m^3} = 1.42  \times 10^{-6} \frac{L}{s}$ 
-
-Assuming that the system is at steady state and therefore the microfluidic structure (tubing and PDMS) is not expanding due to internal pressure we can infer that by conservation of mass and assumed incompressible fluids that the volumetric flowrate is constant across each of the system pressure points shown in Figure ~\vref{fig:resistanceSystem}. We can then produce the following system of equations:
-\\
-$P_2 - P_1 = (R_1) Q$
-\\
-$P_3- P_2 = (R_2)Q$
-\\
-$P_4 - P_3 = (R_3) Q$
-\\
-Applying the previously calculated resistances and flowrate the following pressure differentials are obtained:
-\\
-$P_2 - P_1 = 9.26 \times 10^{-3 }\frac{kg}{m \cdot s^2} =  9.26 \times 10^{-3} Pa$
-\\
-$P_3- P_2 = 49.84 \times 10^{3 }\frac{kg}{m \cdot s^2} =  49.84 \times 10^{3} Pa$
-\\
-$P_4 - P_3 = 9.26 \times 10^{-3 }\frac{kg}{m \cdot s^2} =  9.26 \times 10^{-3} Pa$
-\\
-
-At these values (and given these are all simple linear equations this should be the case regardless of flow viscosity, etc.) the pressure drop across the micro-scale device comprises of:
-
-$\frac{P_3-P_2}{P_4-P_1} = \frac{49.84 \times 10^{3}}{50.00 \times 10^{3}} = 0.9968$
-
-And so it may be appropriate to neglect the pressure drops across the tubing and assume that the PDFC applied pressure is equivalent to the pressure applied across the droplet-maker. This can be further justified by the fact that the control precision of the system (a few mbar) is larger than the negligible pressure differentials of the tubing sections. XX consider modeling this using the same modeling software used for the BD lab (especially modeling the pressure drops across the microfluidic device itself.
+\begin{equation}
+R_2 = \frac{28.4 \eta L}{ h^4}= \frac{28.4 (0.001) (0.010)}{ 0.00005^4} = 4.54 \times 10^{13}\frac{kg}{m^4s}
+\label{eq:resSquare}
+\end{equation}
 
 
+Clearly the resistance seen over the length of the simplified microfluidic device of dimensions $50 \ um \times 50 \um$ is several orders of magnitude greater than the resistance of the systems input and output tubing. If the total pressure $(P_4 - P_1)$ is assumed to be an arbitrary value of 500mbar, flowrate can be calculated as shown in \vref{eq:resFlow}.
+
+\begin{equation*}
+P_4 - P_1 = (R_1 + R_2 + R_3) Q
+\end{equation*}
+
+\begin{equation*}
+Q = \frac{P_4 - P_1 }{(R_1 + R_2 + R3)}
+\end{equation}
+
+\begin{equation}
+Q = \frac{50,000}{(2 (3.26*10^7) + 4.54*10^{13})} = 1.10  \times 10^{-9} \frac{m^3}{s} = 1.10  \times 10^{-6} \frac{L}{s}
+\label{eq:resFlow}
+\end{equation}
+
+Assuming that the system is at steady state and therefore the microfluidic structure (tubing and PDMS) is not expanding due to internal pressure we can infer that by conservation of mass and assumed incompressible fluids that the volumetric flowrate is constant across each of the system pressure points shown in Figure ~\vref{fig:resistanceSystem}. Taking this constant flowrate and the previously found resistances individual pressure drops can be calculated as shown in Equation \vref{eq:resPress}.
+
+\begin{equation*}
+P_2 - P_1 = (R_1) Q = 3.59 \times 10^{-2} Pa
+\end{equation*}
+\begin{equation*}
+P_3- P_2 = (R_2)Q = 4.99 \times 10^{4 }Pa
+\end{equation*}
+\begin{equation}
+P_4 - P_3 = (R_3) Q = 3.59 \times 10^{-2} Pa
+\label{eq:resPress}
+\end{equation}
+
+In this simplified case, representative of a typical microfluidic experimental set-up, the pressure loss due to the tubing as a percentage of the total pressure drop can be calculated as shown in Equation \vref{eq:totalLoss}
+\begin{equation}
+\frac{P_3-P_2}{P_4-P_1} = \frac{3.59 \times 10^{-2}}{50.00 \times 10^{3}} = 7.18 \times 10^{-7}
+\label{eq:totalLoss}
+\end{equation}
+
+And so it may be appropriate to neglect the pressure drops across the tubing and assume that the PDFC applied pressure is equivalent to the pressure applied across the microfluidic device. This can be further justified by the fact that the control precision of the system (shown to be 0.25mbar) is larger than the negligible pressure differentials of the tubing sections.
 

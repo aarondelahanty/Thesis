@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  20 AUG 2016 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  24 AUG 2016 13:55
 entering extended mode
 **./ociamthesismain.tex
 (ociamthesismain.tex
@@ -216,29 +216,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks31
 \@floatcapt=\box31
 ) (ociamthesismain.aux (abstract.aux) (introduction.aux)
-(theory.aux
+(systemDevelopment.aux) (theory.aux
 
 LaTeX Warning: Label `eq:navierCOM' multiply defined.
 
-) (systemDevelopment.aux
-
-LaTeX Warning: Label `fig:pneumaticSchematic' multiply defined.
-
-) (droplet.aux) (conclusions.aux) (appendix1.aux) (appendix2.aux))
+) (droplet.aux) (conclusions.aux) (appendix1.aux) (appendix2.aux) (appendix3.aux))
 \openout1 = `ociamthesismain.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 ("C:\Users\Aaron Delahanty\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -305,7 +301,7 @@ Package caption Info: End \AtBeginDocument code.
 File: UoGlogo.PNG Graphic file (type png)
 
 <use UoGlogo.PNG>
-Package pdftex.def Info: UoGlogo.PNG used on input line 53.
+Package pdftex.def Info: UoGlogo.PNG used on input line 52.
 (pdftex.def)             Requested size: 216.81pt x 67.99988pt.
  [1
 
@@ -314,19 +310,19 @@ Package pdftex.def Info: UoGlogo.PNG used on input line 53.
 \openout2 = `abstract.aux'.
 
 
-(abstract.tex [2
-
-
-] [3]) (ociamthesismain.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+(abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [2
+
+
+]) (ociamthesismain.toc)
 \tf@toc=\write3
 \openout3 = `ociamthesismain.toc'.
 
@@ -338,7 +334,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lof=\write4
 \openout4 = `ociamthesismain.lof'.
 
- [2
+
+[2
 
 ]
 \openout2 = `introduction.aux'.
@@ -350,127 +347,136 @@ Chapter 1.
 
 
 ]
+\openout2 = `systemDevelopment.aux'.
+
+ (systemDevelopment.tex
+Chapter 2.
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \caption
+             [Droplet Polydispersity]{Dimensional analysis of droplets}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[2
+
+
+
+] <systemOverview.PNG, id=29, 685.56125pt x 740.7675pt>
+File: systemOverview.PNG Graphic file (type png)
+ <use systemOverview.PNG>
+Package pdftex.def Info: systemOverview.PNG used on input line 48.
+(pdftex.def)             Requested size: 433.62pt x 468.55101pt.
+
+
+LaTeX Warning: Reference `pneumaticSchematic.PNG' on page 3 undefined on input line 53.
+
+
+LaTeX Warning: Reference `pneumaticSchematic.PNG' on page 3 undefined on input line 53.
+
+<pneumaticSchematic.PNG, id=30, 447.92343pt x 615.0478pt>
+File: pneumaticSchematic.PNG Graphic file (type png)
+ <use pneumaticSchematic.PNG>
+Package pdftex.def Info: pneumaticSchematic.PNG used on input line 57.
+(pdftex.def)             Requested size: 433.62pt x 595.42256pt.
+ [3 <./systemOverview.PNG>]
+[4 <./pneumaticSchematic.PNG>] <timeResponse.PNG, id=40, 674.52pt x 673.51625pt>
+File: timeResponse.PNG Graphic file (type png)
+ <use timeResponse.PNG>
+Package pdftex.def Info: timeResponse.PNG used on input line 79.
+(pdftex.def)             Requested size: 433.62pt x 432.981pt.
+ [5] [6 <./timeResponse.PNG>] <constV.PNG, id=48, 505.89pt x 505.13719pt>
+File: constV.PNG Graphic file (type png)
+ <use constV.PNG>
+Package pdftex.def Info: constV.PNG used on input line 92.
+(pdftex.def)             Requested size: 433.62pt x 432.98358pt.
+) [7 <./constV.PNG>]
 \openout2 = `theory.aux'.
 
  (theory.tex
-Chapter 2.
-<systemScale.PNG, id=27, 809.0225pt x 671.50874pt>
+Chapter 3.
+<systemScale.PNG, id=53, 809.0225pt x 671.50874pt>
 File: systemScale.PNG Graphic file (type png)
  <use systemScale.PNG>
 Package pdftex.def Info: systemScale.PNG used on input line 7.
 (pdftex.def)             Requested size: 260.17464pt x 215.9528pt.
- [2
+ [8
 
 
 
- <./systemScale.PNG>] [3
+ <./systemScale.PNG>] [9
 
-]
-<scalingLaw.PNG, id=38, 831.105pt x 566.115pt>
-File: scalingLaw.PNG Graphic file (type png)
- <use scalingLaw.PNG>
-Package pdftex.def Info: scalingLaw.PNG used on input line 55.
-(pdftex.def)             Requested size: 260.17464pt x 177.22147pt.
- [4 <./scalingLaw.PNG>]
-Missing character: There is no × in font cmr12!
-Missing character: There is no × in font cmr12!
- [5]
-<resistanceSystem.PNG, id=50, 391.7034pt x 260.6538pt>
+] [10] [11]
+
+LaTeX Warning: Citation `Bruus2008' on page 12 undefined on input line 102.
+
+<resistanceSystem.PNG, id=72, 612.03656pt x 407.27156pt>
 File: resistanceSystem.PNG Graphic file (type png)
  <use resistanceSystem.PNG>
-Package pdftex.def Info: resistanceSystem.PNG used on input line 105.
-(pdftex.def)             Requested size: 433.62pt x 288.55753pt.
+Package pdftex.def Info: resistanceSystem.PNG used on input line 121.
+(pdftex.def)             Requested size: 433.62pt x 288.54338pt.
+ [12] [13 <./resistanceSystem.PNG>]
+! Undefined control sequence.
+l.143 ...vice of dimensions $50 \ um \times 50 \um
+                                                  $ is several orders of mag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! LaTeX Error: \begin{equation*} on input line 149 ended by \end{equation}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 \end{equation}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--165
-
- []
-
-[7 <./resistanceSystem.PNG>]) [8]
-\openout2 = `systemDevelopment.aux'.
-
- (systemDevelopment.tex
-Chapter 3.
-<PDFCsystemFlowchart.PNG, id=64, 850.17625pt x 825.0825pt>
-File: PDFCsystemFlowchart.PNG Graphic file (type png)
- <use PDFCsystemFlowchart.PNG>
-Package pdftex.def Info: PDFCsystemFlowchart.PNG used on input line 7.
-(pdftex.def)             Requested size: 433.62pt x 420.82428pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<pneumaticSchematic.PNG, id=65, 337.26pt x 483.7272pt>
-File: pneumaticSchematic.PNG Graphic file (type png)
- <use pneumaticSchematic.PNG>
-Package pdftex.def Info: pneumaticSchematic.PNG used on input line 14.
-(pdftex.def)             Requested size: 433.62pt x 621.95137pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [9
-
-
-
-] [10 <./PDFCsystemFlowchart.PNG>] [11 <./pneumaticSchematic.PNG>]
+) [14]
 \openout2 = `droplet.aux'.
 
  (droplet.tex
 Chapter 4.
-[12
+[15
 
 
 
-] <lwvpr.PNG, id=80, 1032.85875pt x 578.16pt>
+] <lwvpr.PNG, id=87, 1032.85875pt x 578.16pt>
 File: lwvpr.PNG Graphic file (type png)
  <use lwvpr.PNG>
-Package pdftex.def Info: lwvpr.PNG used on input line 27.
+Package pdftex.def Info: lwvpr.PNG used on input line 24.
 (pdftex.def)             Requested size: 433.62pt x 242.7285pt.
- <regimes2.PNG, id=81, 557.08125pt x 846.16125pt>
+ [16 <./lwvpr.PNG>]
+<regimes2.PNG, id=94, 557.08125pt x 846.16125pt>
 File: regimes2.PNG Graphic file (type png)
-
-<use regimes2.PNG>
-Package pdftex.def Info: regimes2.PNG used on input line 43.
+ <use regimes2.PNG>
+Package pdftex.def Info: regimes2.PNG used on input line 40.
 (pdftex.def)             Requested size: 325.215pt x 493.9888pt.
- [13 <./lwvpr.PNG>] <1_poly.PNG, id=86, 674.52pt x 673.51625pt>
+ [17] [18 <./regimes2.PNG>]
+<1_poly.PNG, id=102, 674.52pt x 673.51625pt>
 File: 1_poly.PNG Graphic file (type png)
  <use 1_poly.PNG>
-Package pdftex.def Info: 1_poly.PNG used on input line 51.
+Package pdftex.def Info: 1_poly.PNG used on input line 50.
 (pdftex.def)             Requested size: 433.62pt x 432.981pt.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52 ...tion of droplet length for P_oil = 0.1bar}
+l.51 ...tion of droplet length for P_oil = 0.1bar}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -478,7 +484,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52 ...tion of droplet length for P_oil = 0.1bar}
+l.51 ...tion of droplet length for P_oil = 0.1bar}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -486,7 +492,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52 ...tion of droplet length for P_oil = 0.1bar}
+l.51 ...tion of droplet length for P_oil = 0.1bar}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -494,25 +500,25 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52 ...tion of droplet length for P_oil = 0.1bar}
+l.51 ...tion of droplet length for P_oil = 0.1bar}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[14 <./regimes2.PNG>]
+[19 <./1_poly.PNG>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.59 P_
-       {OIL}(mbar) & P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
+l.63 P_
+       {Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \endtemplate 
-l.59 P_{OIL}(mbar) &
-                     P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
+l.63 P_{Ratio} &
+                 Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -522,54 +528,16 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.59 P_{OIL}(mbar) &
-                     P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
+l.63 P_{Ratio} &
+                 Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.59 P_{OIL}(mbar) &
-                     P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.59 P_{OIL}(mbar) & P_
-                       {Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.59 P_{OIL}(mbar) & P_{Ratio} &
-                                 Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.59 P_{OIL}(mbar) & P_{Ratio} &
-                                 Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.59 P_{OIL}(mbar) & P_{Ratio} &
-                                 Vel (m/s) & Ca & Mean Length(um) & StdDev(u...
+l.63 P_{Ratio} &
+                 Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -577,89 +545,83 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (53.61894pt too wide) in paragraph at lines 58--66
-[][] 
- []
+! Package caption Error: \caption outside float.
 
-[15 <./1_poly.PNG>] <menechtransition.PNG, id=96, 496.10344pt x 346.29375pt>
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \caption
+             [Droplet Polydispersity]{Dimensional analysis of droplets}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[20
+
+] <menechtransition.PNG, id=110, 496.10344pt x 346.29375pt>
 File: menechtransition.PNG Graphic file (type png)
  <use menechtransition.PNG>
-Package pdftex.def Info: menechtransition.PNG used on input line 79.
+Package pdftex.def Info: menechtransition.PNG used on input line 84.
 (pdftex.def)             Requested size: 325.215pt x 227.01164pt.
 
-<CrCaABline.PNG, id=97, 361.35pt x 379.4175pt>
+<CrCaABline.PNG, id=111, 361.35pt x 379.4175pt>
 File: CrCaABline.PNG Graphic file (type png)
  <use CrCaABline.PNG>
-Package pdftex.def Info: CrCaABline.PNG used on input line 88.
+Package pdftex.def Info: CrCaABline.PNG used on input line 93.
 (pdftex.def)             Requested size: 325.215pt x 341.47838pt.
- [16
+ [21
 
- <./menechtransition.PNG>]
-<Ca_cor.PNG, id=102, 674.52pt x 673.51625pt>
+ <./menechtransition.PNG>] [22 <./CrCaABline.PNG>] <pressureBalance.PNG, id=121, 618.81187pt x 511.9125pt>
+File: pressureBalance.PNG Graphic file (type png)
+ <use pressureBalance.PNG>
+Package pdftex.def Info: pressureBalance.PNG used on input line 108.
+(pdftex.def)             Requested size: 325.215pt x 269.03929pt.
+
+<Ca_cor.PNG, id=122, 674.52pt x 673.51625pt>
 File: Ca_cor.PNG Graphic file (type png)
  <use Ca_cor.PNG>
-Package pdftex.def Info: Ca_cor.PNG used on input line 99.
+Package pdftex.def Info: Ca_cor.PNG used on input line 118.
 (pdftex.def)             Requested size: 325.215pt x 324.73318pt.
- [17 <./CrCaABline.PNG>]
-<vel_pr.PNG, id=107, 576.65437pt x 406.51875pt>
+ [23 <./pressureBalance.PNG>]
+<vel_pr.PNG, id=127, 576.65437pt x 406.51875pt>
 File: vel_pr.PNG Graphic file (type png)
  <use vel_pr.PNG>
-Package pdftex.def Info: vel_pr.PNG used on input line 108.
+Package pdftex.def Info: vel_pr.PNG used on input line 127.
 (pdftex.def)             Requested size: 433.62pt x 305.69469pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<wardVelocity.PNG, id=108, 484.81125pt x 586.19pt>
+<wardVelocity.PNG, id=128, 484.81125pt x 586.19pt>
 File: wardVelocity.PNG Graphic file (type png)
  <use wardVelocity.PNG>
-Package pdftex.def Info: wardVelocity.PNG used on input line 116.
+Package pdftex.def Info: wardVelocity.PNG used on input line 135.
 (pdftex.def)             Requested size: 325.215pt x 393.23721pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./Ca_cor.PNG>] [19 <./vel_pr.PNG>] [20 <./wardVelocity.PNG>] <ca_pr.PNG, id=122, 489.32813pt x 462.97969pt>
-File: ca_pr.PNG Graphic file (type png)
-
-<use ca_pr.PNG>
-Package pdftex.def Info: ca_pr.PNG used on input line 134.
-(pdftex.def)             Requested size: 325.215pt x 307.70807pt.
-
-
-LaTeX Warning: Reference `ReCa_calc' on page 21 undefined on input line 140.
-
-
-LaTeX Warning: Reference `ReCa_calc' on page 21 undefined on input line 140.
-
-<ReCa_calc.PNG, id=123, 872.25874pt x 577.15625pt>
-File: ReCa_calc.PNG Graphic file (type png)
- <use ReCa_calc.PNG>
-Package pdftex.def Info: ReCa_calc.PNG used on input line 144.
-(pdftex.def)             Requested size: 433.62pt x 286.91295pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21
-
- <./ca_pr.PNG>] [22 <./ReCa_calc.PNG>] <constP.PNG, id=132, 660.4675pt x 638.385pt>
+[24 <./Ca_cor.PNG>] [25 <./vel_pr.PNG>] [26 <./wardVelocity.PNG>] <constP.PNG, id=141, 660.4675pt x 638.385pt>
 File: constP.PNG Graphic file (type png)
- <use constP.PNG>
-Package pdftex.def Info: constP.PNG used on input line 192.
+
+<use constP.PNG>
+Package pdftex.def Info: constP.PNG used on input line 184.
 (pdftex.def)             Requested size: 325.215pt x 314.35045pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [23
+) [27
 
-] [24 <./constP.PNG>]
+] [28 <./constP.PNG>]
 \openout2 = `conclusions.aux'.
 
  (conclusions.tex
 Chapter 5.
-) [25
+) [29
 
 
 
@@ -668,21 +630,21 @@ Chapter 5.
 
  (appendix1.tex
 Appendix A.
-[26
+[30
 
 
 
-] [27] [28]) [29]
+] [31] [32]) [33]
 \openout2 = `appendix2.aux'.
 
  (appendix2.tex
 Appendix B.
-<frontend.PNG, id=157, 689.57625pt x 472.01344pt>
+<frontend.PNG, id=167, 689.57625pt x 472.01344pt>
 File: frontend.PNG Graphic file (type png)
  <use frontend.PNG>
 Package pdftex.def Info: frontend.PNG used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 296.81546pt.
- <backend1.PNG, id=158, 435.12563pt x 1392.70313pt>
+ <backend1.PNG, id=168, 435.12563pt x 1392.70313pt>
 File: backend1.PNG Graphic file (type png)
 
 <use backend1.PNG>
@@ -695,7 +657,7 @@ LaTeX Warning: Float too large for page by 762.05202pt on input line 15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<backend2.PNG, id=159, 415.5525pt x 1373.13pt>
+<backend2.PNG, id=169, 415.5525pt x 1373.13pt>
 File: backend2.PNG Graphic file (type png)
  <use backend2.PNG>
 Package pdftex.def Info: backend2.PNG used on input line 19.
@@ -707,20 +669,43 @@ LaTeX Warning: Float too large for page by 806.95247pt on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [30
+) [34
 
 
 
- <./frontend.PNG>] [31 <./backend1.PNG>] [32 <./backend2.PNG>] (ociamthesismain.bbl
+ <./frontend.PNG>] [35 <./backend1.PNG>] [36 <./backend2.PNG>]
+\openout2 = `appendix3.aux'.
+
+ (appendix3.tex
+Appendix C.
+<2_poly.PNG, id=182, 674.52pt x 673.51625pt>
+File: 2_poly.PNG Graphic file (type png)
+ <use 2_poly.PNG>
+Package pdftex.def Info: 2_poly.PNG used on input line 5.
+(pdftex.def)             Requested size: 433.62pt x 432.981pt.
+ [37
+
+
+
+]
+Overfull \vbox (4.88875pt too high) has occurred while \output is active []
+
+ [38 <./2_poly.PNG>]
+<3_poly.PNG, id=190, 674.52pt x 673.51625pt>
+File: 3_poly.PNG Graphic file (type png)
+ <use 3_poly.PNG>
+Package pdftex.def Info: 3_poly.PNG used on input line 12.
+(pdftex.def)             Requested size: 433.62pt x 432.981pt.
+) [39 <./3_poly.PNG>] (ociamthesismain.bbl
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no ” in font cmr8!
-) [33
+) [40
 
 
-] (ociamthesismain.aux
-(abstract.aux) (introduction.aux) (theory.aux) (systemDevelopment.aux) (droplet.aux) (conclusions.aux) (appendix1.aux)
-(appendix2.aux))
+] [41]
+(ociamthesismain.aux (abstract.aux) (introduction.aux) (systemDevelopment.aux) (theory.aux) (droplet.aux)
+(conclusions.aux) (appendix1.aux) (appendix2.aux) (appendix3.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -729,10 +714,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5434 strings out of 493334
- 79340 string characters out of 3136640
- 298656 words of memory out of 3000000
- 8813 multiletter control sequences out of 15000+200000
+ 5495 strings out of 493334
+ 80056 string characters out of 3136640
+ 299560 words of memory out of 3000000
+ 8865 multiletter control sequences out of 15000+200000
  11623 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,42p,1221b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -745,9 +730,9 @@ cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ociamthesismain.pdf (38 pages, 1290982 bytes).
+Output written on ociamthesismain.pdf (45 pages, 1177813 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 249 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,12 +8,9 @@ The application of the PDFC to droplet microfluidics serves two purposes. First,
 \end{enumerate}
 \section{Methods}
 \subsection{Device Generation}
-\begin{comment}
-BELOW IS A GOOD EXAMPLE OF A BRIEF DEVICE GENERATION PROCEDURE:
 
-"The microfluidic device is fabricated using conventional soft lithography methods.11 A
-50 lm thick SU-8 photoresist was spin-coated onto a RCA-1 cleaned silicon wafer and patterned with UV light and a contact mask. Unpolymerized photoresist was removed during de- velopment using SU-8 developer. Poly (dimethyl siloxane), or PDMS (Sylgard 184, Dow Corn- ing) was poured onto the SU-8 mold to form the fluidic channels. After cutting the devices off of the mold and punching connection holes, the devices were treated with oxygen plasma and bonded to a slab of PDMS. Flow was driven using digital pressure regulators (SMC Corpora- tion, Noblesville, IN, USA) with an output pressure range of 0.005-0.1 MPa, and controlled via a custom LabView interface" - \cite{Simon2012}
-\end{comment}
+The T-junction microfluidic device referenced herein is fabricated using standard soft lithography methods \cite{Stroock2002}. Two part Polydimethylsiloxane (PDMS) was poured onto a SU-8 mold previously developed by Schmid and Franke \cite{Schmid2014c} to form an array of individual T-junction channels. The PDMS was cured at 65dC for 3 hours. After cooling to room temperature, the set PDMS was cut and removed from the mold. Tubing connection holes were punched using a standard $0.5mm$ biopsy punch. Next, both glass slide and the PDMS are oxygen-plasma treated, adhered, and exposed to 100dC for 1hour. Prior to use, devices are treated with the aquapel for 10mins, purged with filtered compressed gas and dried at 65dC for 3 hours. 
+
 \subsection{Experimental Procedure}
 
 Droplet formation was captured on a high speed camera at 2.5k to 20k frames per second. The applied control pressure was held constant for the continuous phase at a nominal value of 40, 60 and 80 mbar while varying the discontinuous phase control pressure. Discontinuous phase control pressure was varied at intervals of $\approx$5mbar until droplet formation ceased due to the onset of backflow or instability, for low or high pressures, respectively. The captured images were then analyzed using a custom imageJ script to determine droplet length, $L$, and position, $X$, along an arbitrarily defined axis parallel to the geometry's outlet channel.
@@ -45,6 +42,8 @@ Droplet length is plotted as a function of capillary number as shown in Figure \
 \label{fig:regimes2} 
 \end{figure}
 
+Variance in droplet dimensions is analyzed by evaluating the length of droplets formed by constant applied control pressures. Images were acquired at 500 fps for a period of 10 seconds resulting in a sample size of at least 100 droplets with at least three length measurements taken in subsequent frames per unique droplet. A variety
+ of investigative plots are shown in Figure \vref{fig:1_poly}, for data acquired at $P_{OIL} = 20mbar,  P_{H_2O} = 80mbar$, resulting in a $Ca$ value of 0.010. The same analysis was conducted at two higher $Ca$ values and is found in Appendix Polydispersity.
 
 \begin{figure}[H]
 \centering 
@@ -53,15 +52,21 @@ Droplet length is plotted as a function of capillary number as shown in Figure \
 \label{fig:1_poly} 
 \end{figure}
 
-In order to investigate polydispersity of generated droplets, a large number of droplets were measured as shown in Table 
+
+\clearpage
+
+From the analyzed data sets droplet veloctiy, capillary number, mean length, length standard deviation and percent variation ($length stdev / mean length$) are extracted. A summary of the resulting dimensional statistics is shown in Table \vref{tab:poly}.
+
+\qquad
 
 \begin{tabular}{l*{6}{c}r}
-P_{OIL}(mbar) & P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
+P_{Ratio} & Vel (m/s) & Ca & Mean Length(um) & StdDev(um) & Percent Var \\
 \hline
-20 & 4 & 0.023 & 0.010 & 57.71 & 0.55 & 0.95 \\
-40 & 2.25 & 0.033 & 0.014 & 54.53 & 0.35 &  0.64 \\
-60 & 1.66 & 0.043 & 0.018 & 48.14 & 0.21 &  0.43 \\
-
+4 & 0.023 & 0.010 & 57.71 & 0.55 & 0.95 \\
+2.25 & 0.033 & 0.014 & 54.53 & 0.35 &  0.64 \\
+1.66 & 0.043 & 0.018 & 48.14 & 0.21 &  0.43 \\
+\caption[Droplet Polydispersity]{Dimensional analysis of droplets}
+\label{tab:poly} 
 \end{tabular}
 
 
@@ -92,6 +97,20 @@ The data presented here shows a distinct transition between dripping and squeezi
 
 In these experiments the same bulk reagents are used and therefore both interfacial tension and viscosities should remain constant across multiple trials. Here, the only variable affecting variability in the \emph{Ca} value is the mean velocity of the continuous phase, which in this case is approximated by direct measurement of the droplet velocity. It is expected that there is some numerical difference between the velocity of the droplets and the mean velocity of the continuous phase \cite{Ward2005}, which may account for the variability in critical capillary number.
 
+Unfortunately due to the complex nature of multiphase flow during droplet formation it may be difficult to further investigate the true mean velocity of the continuous phase. However, there is one simplified case that allows for continuous phase flowrate and
+\begin{center}
+
+\end{center}
+ therefore velocity approximation. That is the case at which no-flow occurs, immediately prior to initial droplet formation within the dripping regime. In this case force balance occurs such that the local continuous phase pressure is equal to the sum of the Laplace pressure and the local discontinuous phase pressure, shown in equation...XX.
+
+\begin{figure}[H]
+\centering 
+\includegraphics[width=0.75\columnwidth]{pressureBalance.PNG} 
+\caption[Pressure Balance at no-flow condition.]{Pressure balance at no-flow condition} 
+\label{fig:pressureBalance} 
+\end{figure}
+
+
 A model of Poiseuille flow in a rectangular channel could be used to provide a more accurate determination of the mean continuous phase velocity (as a function of droplet velocity. Alternatively, due to the linear nature of relationship between applied control pressure of the continuous phase and the critical capillary number the velocities could be corrected such that the regime transition is coincident, as shown in Figure \vref{fig:ca_cor}.
 
 \begin{figure}[H]
@@ -118,33 +137,6 @@ In the system developed here, the only inputs used to manipulate flow behavior a
 \label{fig:wardVelocity} 
 \end{figure}
 
-\clearpage
-
-Two important observations:
-\begin{enumerate}
-\item The system used here is operating at velocities approximately a magnitude greater than Ward's system (1m/s vs 1cm/s)
-\item The relationship between velocity and applied pressure ratios are different. Our system shows a relatively linear and slightly downward trending velocity while in Ward's case velocity is relatively flat then at some critical pressure increases exponentially.
-\end{enumerate}
-
-
-From the droplet velocity Ca and Re values can be determined. Again, Ca is considerably higher than reported by others \cite{DeMenech2008}, \cite{Ward2005} . A plot of droplet length versus Ca value is shown in Figure \vref{fig:ca_pr}.
-
-\begin{figure}[h]
-\centering 
-\includegraphics[width=0.750\columnwidth]{ca_pr.PNG} 
-\caption[Capillary Number as a function of Applied Control Pressure Ratio]{Log-Log plot Capillary Number as a function of Applied Control Pressure Ratio }
-\label{fig:ca_pr} 
-\end{figure}
-
-
-Using the determined velocities Ca and Re numbers are calculated as shown in Figure \vref{ReCa_calc}
-
-\begin{figure}[h]
-\centering 
-\includegraphics[width=01.0\columnwidth]{ReCa_calc.PNG} 
-\caption[Re Ca Calculations]{Re Ca Calculations }
-\label{fig:ReCa_calc} 
-\end{figure}
 
 
 \clearpage
