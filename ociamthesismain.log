@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  24 AUG 2016 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  24 AUG 2016 15:35
 entering extended mode
 **./ociamthesismain.tex
 (ociamthesismain.tex
@@ -614,14 +614,20 @@ Package pdftex.def Info: constP.PNG used on input line 184.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [27
+[27
 
-] [28 <./constP.PNG>]
+] <regimes.PNG, id=146, 773.13844pt x 545.03625pt>
+File: regimes.PNG Graphic file (type png)
+ <use regimes.PNG>
+Package pdftex.def Info: regimes.PNG used on input line 196.
+(pdftex.def)             Requested size: 433.62pt x 305.68394pt.
+) [28 <./constP.PNG>] [29 <./regimes.PNG>]
 \openout2 = `conclusions.aux'.
 
- (conclusions.tex
+
+(conclusions.tex
 Chapter 5.
-) [29
+) [30
 
 
 
@@ -630,21 +636,21 @@ Chapter 5.
 
  (appendix1.tex
 Appendix A.
-[30
+[31
 
 
 
-] [31] [32]) [33]
+] [32] [33]) [34]
 \openout2 = `appendix2.aux'.
 
  (appendix2.tex
 Appendix B.
-<frontend.PNG, id=167, 689.57625pt x 472.01344pt>
+<frontend.PNG, id=172, 689.57625pt x 472.01344pt>
 File: frontend.PNG Graphic file (type png)
  <use frontend.PNG>
 Package pdftex.def Info: frontend.PNG used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 296.81546pt.
- <backend1.PNG, id=168, 435.12563pt x 1392.70313pt>
+ <backend1.PNG, id=173, 435.12563pt x 1392.70313pt>
 File: backend1.PNG Graphic file (type png)
 
 <use backend1.PNG>
@@ -657,7 +663,7 @@ LaTeX Warning: Float too large for page by 762.05202pt on input line 15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<backend2.PNG, id=169, 415.5525pt x 1373.13pt>
+<backend2.PNG, id=174, 415.5525pt x 1373.13pt>
 File: backend2.PNG Graphic file (type png)
  <use backend2.PNG>
 Package pdftex.def Info: backend2.PNG used on input line 19.
@@ -669,41 +675,41 @@ LaTeX Warning: Float too large for page by 806.95247pt on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [34
+) [35
 
 
 
- <./frontend.PNG>] [35 <./backend1.PNG>] [36 <./backend2.PNG>]
+ <./frontend.PNG>] [36 <./backend1.PNG>] [37 <./backend2.PNG>]
 \openout2 = `appendix3.aux'.
 
  (appendix3.tex
 Appendix C.
-<2_poly.PNG, id=182, 674.52pt x 673.51625pt>
+<2_poly.PNG, id=187, 674.52pt x 673.51625pt>
 File: 2_poly.PNG Graphic file (type png)
  <use 2_poly.PNG>
 Package pdftex.def Info: 2_poly.PNG used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 432.981pt.
- [37
+ [38
 
 
 
 ]
 Overfull \vbox (4.88875pt too high) has occurred while \output is active []
 
- [38 <./2_poly.PNG>]
-<3_poly.PNG, id=190, 674.52pt x 673.51625pt>
+ [39 <./2_poly.PNG>]
+<3_poly.PNG, id=196, 674.52pt x 673.51625pt>
 File: 3_poly.PNG Graphic file (type png)
  <use 3_poly.PNG>
 Package pdftex.def Info: 3_poly.PNG used on input line 12.
 (pdftex.def)             Requested size: 433.62pt x 432.981pt.
-) [39 <./3_poly.PNG>] (ociamthesismain.bbl
+) [40 <./3_poly.PNG>] (ociamthesismain.bbl
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no ” in font cmr8!
-) [40
+) [41
 
 
-] [41]
+] [42]
 (ociamthesismain.aux (abstract.aux) (introduction.aux) (systemDevelopment.aux) (theory.aux) (droplet.aux)
 (conclusions.aux) (appendix1.aux) (appendix2.aux) (appendix3.aux))
 
@@ -714,10 +720,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5495 strings out of 493334
- 80056 string characters out of 3136640
- 299560 words of memory out of 3000000
- 8865 multiletter control sequences out of 15000+200000
+ 5498 strings out of 493334
+ 80112 string characters out of 3136640
+ 299533 words of memory out of 3000000
+ 8867 multiletter control sequences out of 15000+200000
  11623 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,42p,1221b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -730,9 +736,9 @@ cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ociamthesismain.pdf (45 pages, 1177813 bytes).
+Output written on ociamthesismain.pdf (46 pages, 1516874 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
+ 254 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
