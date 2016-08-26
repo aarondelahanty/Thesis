@@ -1,25 +1,28 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}System Development}{2}
 \contentsline {section}{\numberline {2.1}Design}{2}
-\contentsline {section}{\numberline {2.2}Characterization}{5}
-\contentsline {chapter}{\numberline {3}Background Theory}{8}
-\contentsline {section}{\numberline {3.1}Droplet microfluidics Overview}{9}
-\contentsline {paragraph}{Navier-Stokes}{10}
-\contentsline {paragraph}{Dimensionless Groups}{10}
-\contentsline {section}{\numberline {3.2}Determining System Flowrates}{11}
-\contentsline {paragraph}{Hydraulic Resistance}{12}
-\contentsline {chapter}{\numberline {4}System Application - Droplet Microluidics}{15}
-\contentsline {section}{\numberline {4.1}Aims}{15}
-\contentsline {section}{\numberline {4.2}Methods}{15}
-\contentsline {subsection}{\numberline {4.2.1}Device Generation}{15}
-\contentsline {subsection}{\numberline {4.2.2}Experimental Procedure}{16}
-\contentsline {section}{\numberline {4.3}Results}{16}
-\contentsline {section}{\numberline {4.4}Discussion}{21}
+\contentsline {paragraph}{Design Inputs}{2}
+\contentsline {paragraph}{System Components}{3}
+\contentsline {paragraph}{Operational Overview}{6}
+\contentsline {section}{\numberline {2.2}Characterization}{8}
+\contentsline {chapter}{\numberline {3}Background Theory}{11}
+\contentsline {section}{\numberline {3.1}Droplet microfluidics Overview}{11}
+\contentsline {paragraph}{Navier-Stokes}{12}
+\contentsline {paragraph}{Dimensionless Groups}{13}
+\contentsline {section}{\numberline {3.2}Determining System Flowrates}{14}
+\contentsline {paragraph}{Hydraulic Resistance}{15}
+\contentsline {chapter}{\numberline {4}System Application - Droplet Microluidics}{18}
+\contentsline {section}{\numberline {4.1}Aims}{18}
+\contentsline {section}{\numberline {4.2}Methods}{18}
+\contentsline {subsection}{\numberline {4.2.1}Device Generation}{18}
+\contentsline {subsection}{\numberline {4.2.2}Experimental Procedure}{19}
+\contentsline {section}{\numberline {4.3}Results}{19}
+\contentsline {section}{\numberline {4.4}Discussion}{24}
 \contentsline {paragraph}{No-Flow}{27}
-\contentsline {paragraph}{Dripping}{27}
-\contentsline {paragraph}{Squeezing}{27}
-\contentsline {chapter}{\numberline {5}Conclusions}{30}
-\contentsline {chapter}{\numberline {A}Arduino Code}{31}
-\contentsline {chapter}{\numberline {B}LabVIEW VI}{35}
-\contentsline {chapter}{\numberline {C}Polydispersity Analysis}{38}
-\contentsline {chapter}{Bibliography}{41}
+\contentsline {paragraph}{Dripping}{29}
+\contentsline {paragraph}{Squeezing}{29}
+\contentsline {chapter}{\numberline {5}Conclusions}{31}
+\contentsline {chapter}{\numberline {A}Arduino Code}{32}
+\contentsline {chapter}{\numberline {B}LabVIEW VI}{36}
+\contentsline {chapter}{\numberline {C}Polydispersity Analysis}{39}
+\contentsline {chapter}{Bibliography}{42}
