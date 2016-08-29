@@ -11,9 +11,20 @@ Adam~R. Abate, Pascaline Mary, Volkert van Steijn, and David~A. Weitz.
   T-junction}.
 \newblock {\em Lab on a Chip}, 12(8):1516, 2012.
 
-\bibitem{bruus2008}
+\bibitem{Baroud2010}
+Charles~N. Baroud, Francois Gallaire, and R{\'{e}}mi Dangla.
+\newblock {Dynamics of microfluidic droplets}.
+\newblock {\em Lab on a Chip}, 10(16):2032, 2010.
+
+\bibitem{Bong2011}
+Ki~Wan Bong, Stephen~C Chapin, Daniel~C Pregibon, David Baah, Tamara~M
+  Floyd-Smith, and Patrick~S Doyle.
+\newblock {Compressed-air flow control system.}
+\newblock {\em Lab on a chip}, 11(4):743--7, 2011.
+
+\bibitem{Bruus2008}
 Henrik Bruus.
-\newblock {\em {Theoretical Microfluidics}}.
+\newblock {\em {Theoretical microfluidics}}, volume~18.
 \newblock Oxford ; New York : Oxford University Press, 2008., 2008.
 
 \bibitem{D??azNafr??a2013}
@@ -53,6 +64,12 @@ Piotr Garstecki, Michael~J. Fuerstman, Howard~A. Stone, and George~M.
   T-junction—scaling and mechanism of break-up}.
 \newblock {\em Lab on a Chip}, 6(3):437, 2006.
 
+\bibitem{Kaminski2016}
+Tomasz~S Kaminski, Ott Scheler, and Piotr Garstecki.
+\newblock {Droplet microfluidics for microbiology: techniques, applications and
+  challenges.}
+\newblock {\em Lab Chip}, 16:2168--2187, 2016.
+
 \bibitem{Kleinstreuer2013}
 Clement Kleinstreuer.
 \newblock {\em {Microfluidics and Nanofluidics: Theory and Selected
@@ -65,10 +82,12 @@ Zida Li, Sze~Yi Mak, Alban Sauret, and Ho~Cheung Shum.
   implications for flow rate accuracy}.
 \newblock {\em Lab on a Chip}, 14(4):744, 2014.
 
-\bibitem{Vyawahare2014}
-{Princeton Microfluidics}.
-\newblock {Microfluidics Bootcamp 2014}.
-\newblock 2014.
+\bibitem{Lim2015}
+Jiseok Lim, Ouriel Caen, J{\'{e}}r{\'{e}}my Vrignon, Manfred Konrad,
+  Val{\'{e}}rie Taly, and Jean~Christophe Baret.
+\newblock {Parallelized ultra-high throughput microfluidic emulsifier for
+  multiplex kinetic assays}.
+\newblock {\em Biomicrofluidics}, 9(3), 2015.
 
 \bibitem{Schmid2014c}
 Lothar Schmid and Thomas Franke.
@@ -98,20 +117,16 @@ A.D. Stroock and G.M. Whitesides.
   systems}.
 \newblock {\em Electrophoresis}, 23(20):3461--3473, 2002.
 
+\bibitem{Thorsen2001}
+Todd Thorsen, Richard~W. Roberts, Frances~H. Arnold, and Stephen~R. Quake.
+\newblock {Dynamic pattern formation in a vesicle-generating microfluidic
+  device}.
+\newblock {\em Physical Review Letters}, 86(18):4163--4166, 2001.
+
 \bibitem{Ward2005}
 Thomas Ward, Magalie Faivre, Manouk Abkarian, and Howard~A. Stone.
 \newblock {Microfluidic flow focusing: Drop size and scaling in pressure versus
   flow-rate-driven pumping}.
 \newblock {\em Electrophoresis}, 26(19):3716--3724, 2005.
-
-\bibitem{Yang2010}
-Chun~Guang Yang, Zhang~Run Xu, and Jian~Hua Wang.
-\newblock {Manipulation of droplets in microfluidic systems}.
-\newblock {\em TrAC - Trends in Analytical Chemistry}, 29(2):141--157, 2010.
-
-\bibitem{Zhao2011}
-Chun~Xia Zhao and Anton P~J Middelberg.
-\newblock {Two-phase microfluidic flows}.
-\newblock {\em Chemical Engineering Science}, 66(7):1394--1411, 2011.
 
 \end{thebibliography}

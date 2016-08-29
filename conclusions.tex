@@ -1,2 +1,24 @@
 \chapter{Conclusions}
 
+
+\section{Areas of Further Investigation}
+
+Given the nature of the PDFC as a general flow provider and that it is intended to be used for applications outside of droplet formation there are systems aspects that may be improved.
+
+\subsection{Improvement of Time Response}
+It may be beneficial to seek faster actuating regulators and to improve the signal propagation time (currently limited by the LabVIEW VISA tool set). One approach may be to move signal generation to the Arduino and to use LabVIEW as a tool only to set specific preconceived time-dependent flow scenarios. Similarly the Arduino could be interacted with directly, bypassing the need for LabVIEW integration all together by installation of custom inputs. It is also important for future users to keep in mind that compressibility of the system will have an impact on the response time.
+
+\subsection{Addition of External Triggers}
+It may be beneficial to develop the means to trigger pressure modulation via an external trigger. For instance, in a droplet-based assay in which fluorescence output is measured, if a specific fluorescence output is desired the applied pressure and therefore droplet volume could be self modulated to obtain a steady fluorescent output. Due to the availability of microntroller inputs ouputs developing such a trigger would be straightforwad and could be developed on an as-needed basis, depending on application.
+
+\section{Achievements}
+This project was divided into two primary objectives. First, to develop and characterize a pressure driven flow controller system for use as flow provider in microfluidic applications. Second, the system was applied to the generation of droplets using a T-junction microfluidic device.
+
+\subsection{Device Development}
+
+The PDFC system was successfully integrated into the existing microfluidic laboratory set-up. The system is controlled via a custom LabVIEW interface. The system was shown to have a response time on the order of magnitude of approximately 1000ms, significantly faster than comparable syringe pump based systems\cite{Bong2011}. The resulting regulated pressures were shown to be very stable with low inter-channel variation. The PDFC was measured to be capable of $\pm$ 1 mbar accuracy with a signal standard deviation of less than 0.25 mbar, and signal to noise ratio of 400. This highly stable pressure results in high stable flowrates given the system is allowed to come to steady-state, and therefore in the application of droplet formation produces high monodispered droplets.
+
+\subsection{Application to Droplet Formation}
+The PDFC was subsequently used to produce droplets at low capillary numbers in T-junction micro-channels. The transition between flow regimes was clearly documented, shown in Figures \vref{fig:lwvpr} and \vref{fig:regimes2}. While the parameters and conditions resulting in droplet-formation regime transition have been well documented by others, this is the first time the transition has been experimentally documented in a pressure-driven flow system. The transition was quantified by the outer capillary number, and was found to be 0.0135, 0.0185, and 0.0215 for the three different continuous phase pressures tested, similar to values previously reported \cite{Christopher2008,DeMenech2008}. However, unlike previous findings the critical capillary number was not shown to be universal across multiple flow conditions. This may be due to the approximation of the continuous phase mean velocity as calculated from the measured droplet velocity. 
+
+The droplets produced were highly monodisperse, with droplet length coefficient of variations of less than 1 \%. This level of monodispersity was considerably improved relative to syringe pump based systems, and similar to monodsipersity achieved by others using similar systems\cite{Lim2015, Kaminski2016}.

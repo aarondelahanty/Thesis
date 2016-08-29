@@ -1,13 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ociamthesismain.aux
+A level-1 auxiliary file: acknowlegements.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: systemDevelopment.aux
 A level-1 auxiliary file: theory.aux
-Case mismatch error between cite keys Bruus2008 and bruus2008
----line 38 of file theory.aux
- : \citation{Bruus2008
- :                    }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: droplet.aux
 A level-1 auxiliary file: conclusions.aux
 A level-1 auxiliary file: appendix1.aux
@@ -15,7 +11,7 @@ A level-1 auxiliary file: appendix2.aux
 A level-1 auxiliary file: appendix3.aux
 The style file: plain.bst
 Database file #1: refs.bib
+Warning--I didn't find a database entry for "Christopher200"
 Warning--empty journal in 3M2009
 Warning--empty publisher in Kleinstreuer2013
-Warning--empty journal in Vyawahare2014
-(There was 1 error message)
+(There were 3 warnings)

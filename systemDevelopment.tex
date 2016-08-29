@@ -72,22 +72,13 @@ Several pneumatic components are required to provide a compressed gas flow path 
 
 After initiating the write command the digital signal is written synchronously to the micro-controller by Universal Serial Bus (USB) via LabVIEW's 'virtual instrument software architecture'. The signal is initially sent and interpreted as a string and is processed via the embedded micro-controller code into a binary command comprised of the 4 configuration bits and 12 data bits. This binary command is then written to the digital analogue converters (DACs) via standard serial peripheral  interface (SPI) protocol. The DACs convert the binary commands into analogue voltage outputs of 0-5V. This voltage is routed to the input of each pressure regulator and results in the desired pressure output of 0 to 1000 mbar.
 
-The controlled output of each pressure regulator is then split by a y-connector. One flow path goes to the reagent reservoir to drive fluid flow, the other is routed back into the PDFC for real-time measurement by the integrated chip pressure transducers. Each regulated pressure channel is measured by two different 14bit transducers, one is low range (0-350mbar) with increased resolution, the other is full range (0-1000mbar). The pressure transducers produce a digital signal that is then transferred back to the micro-controller via I2C protocol. Finally the measured pressures are sent to the LabVIEW VI for display and optional recording, shown in Figure \vref{fig:readVI}. 
-
-\begin{figure}[H]
-\centering 
-\includegraphics[width=0.65\columnwidth]{readVI.PNG} 
-\caption[LabVIEW measured pressures]{Measured pressures are presented as realtime values, and plotted in a virtual scope capable of being recorded.} 
-\label{fig:readVI} 
-\end{figure}
-
-This entire control process including LabVIEW and microfluidic device integration is summarized in system overview shown in Figure \vref{fig:systemOverview}.
+The controlled output of each pressure regulator is then split by a y-connector. One flow path goes to the reagent reservoir to drive fluid flow, the other is routed back into the PDFC for real-time measurement by the integrated chip pressure transducers. Each regulated pressure channel is measured by two different 14bit transducers, one is low range (0-350mbar) with increased resolution, the other is full range (0-1000mbar). The pressure transducers produce a digital signal that is then transferred back to the micro-controller via I2C protocol. Finally the measured pressures are sent to the LabVIEW VI for display and optional recording. This entire control process including LabVIEW and microfluidic device integration is summarized in system overview shown in Figure \vref{fig:systemOverview}.
 
 
 
 \begin{figure}[H]
 \centering 
-\includegraphics[width=0.65\columnwidth]{systemOverview.PNG} 
+\includegraphics[width=1.0\columnwidth]{systemOverview.PNG} 
 \caption[System Overview of the PDFC]{The control loop used to set and measure channel pressures using the PDFC} 
 \label{fig:systemOverview} 
 \end{figure}
@@ -121,7 +112,7 @@ Pressure Regulator & 100\\
 \end{center}
 \end{table}
 
-The labVIEW VI is capable of recording the measured regulated pressure outputs, which may be used to document control pressures employed for specific experimentation. Here, that data logging capability is used to investigate the system's time response, as shown in Figure \vref{fig:timeResponse}. The gap in data is due to use of 'synchronous' USB communication. The rightmost data prior to the gap coincides with the time point at which the command signal is sent. While all channel outputs clearly converge to the desired nominal output pressure, the time response is broadly speaking slow, and variation in channel regulation is apparent as the pressure output stabilizes. Variation in the stabilization of regulated signal is due to variance from regulator to regulator. The model of regulator used here relies on a Proportional Integral Differential (PID) control circuit with manually adjustable potentiometers to adjust gain constants, non-ideal when attempting to produce coincident outputs on discrete channels.
+The labVIEW VI is capable of recording the measured regulated pressure outputs, which may be used to document control pressures utilized for specific experimentation. Here, that data logging capability is used to investigate the system's time response, as shown in Figure \vref{fig:timeResponse}. The gap in data is due to use of 'synchronous' USB communication within the LabVIEW environment. The rightmost data prior to the gap coincides with the time point at which the command signal is sent. While all channel outputs clearly converge to the desired nominal output pressure, the time response is broadly speaking slow, and variation in channel regulation is apparent as the pressure output stabilizes. Variation in the stabilization of regulated signal is due to differences in the control circuit from regulator to regulator. The model of regulator used here relies on a Proportional Integral Differential (PID) control circuit with manually adjustable potentiometers to adjust gain constants, non-ideal when attempting to produce coincident outputs on discrete channels.
 
 The time from signal write to that of reaching $95\%$ of the desired output, $\tau$, increases as a function of differential pressure sought but is roughly on the magnitude of $~1 sec$. 
 
@@ -132,10 +123,10 @@ The time from signal write to that of reaching $95\%$ of the desired output, $\t
 \label{fig:timeResponse} 
 \end{figure}
 
-These observations suggests that the system as currently developed is not appropriate for the millisecond or faster response times required for real-time manipulation of droplet size. This agrees with previous findings. Flow rate control of droplet formation is known for its slow response whether by syringe pump or pressure flow. Furthermore, response time of the actual device is further delayed due to fluidic capacitance caused by the compressibility of reagents, tubing and PDMS channels \cite{Churski2013,Stone2004}. If fast-response times are sought a more appropriate methodology may be to maintain a steady flowrate and drive droplet formation by active methods through direct manipulation of the fluid at the local point of formation by electrical, mechanical, magnetic, or acoustic means \cite{Chong2016}.
+These observations suggests that the system, as currently developed, is not appropriate for the millisecond or faster response times required for real-time manipulation of droplet size. This agrees with previous findings. Flow rate control of droplet formation is known for its slow response whether by syringe pump or pressure flow. Furthermore, response time of the actual device is further delayed due to fluidic capacitance caused by the compressibility of reagents, tubing and PDMS channels \cite{Churski2013,Stone2004}. If fast-response times are sought a more appropriate methodology may be to maintain a steady flowrate and drive droplet formation by active methods through direct manipulation of the fluid at the local point of formation by electrical, mechanical, magnetic, or acoustic means \cite{Chong2016}.
 
 
-System accuracy and channel to channel variation can be investigated in a similar method to time response. Here, three channels are simultaneously regulated to a nominal 100mbar. After a stabilization time of approximately 3 seconds, a 15 second mean and standard deviation are acquired for each channel, as shown in area between the dashed lines in Figure \vref{fig:constV}. Each channel is capable of regulating to the nominal 100 $\pm$ 1 mbar with a standard deviation of less than 0.25 mbar.
+System accuracy and channel to channel variation can be investigated in a similar method to time response. Here, three channels are simultaneously regulated to a nominal 100mbar. After a stabilization time of approximately 3 seconds, a 15 second mean and standard deviation are acquired for each channel, as shown in area between the dashed lines in Figure \vref{fig:constV}. Each channel is capable of regulating to the nominal 100 $\pm$ 1 mbar with a standard deviation of less than 0.25 mbar. The capability to maintain stable pressure and hence steady flow is critical for production of highly monodispersed droplets, as documented in Results section \ref{sec:results}.
 
 
 \begin{figure}[H]
