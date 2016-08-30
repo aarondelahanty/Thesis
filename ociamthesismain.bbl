@@ -51,6 +51,12 @@ Krzysztof Churski, Michal Nowacki, Piotr~M. Korczyk, and Piotr Garstecki.
 \newblock {Simple modular systems for generation of droplets on demand}.
 \newblock {\em Lab on a Chip}, 13(18):3689--3697, 2013.
 
+\bibitem{Cristini2004}
+Vittorio Cristini and Yung-Chieh Tan.
+\newblock {Theory and numerical simulation of droplet dynamics in complex
+  flows-a review}.
+\newblock {\em Lab on a Chip}, 4(4):257--264, 2004.
+
 \bibitem{DeMenech2008}
 M.~{De Menech}, P.~Garstecki, F.~Jousse, and H.~a. Stone.
 \newblock {Transition from squeezing to dripping in a microfluidic T-shaped
@@ -128,5 +134,11 @@ Thomas Ward, Magalie Faivre, Manouk Abkarian, and Howard~A. Stone.
 \newblock {Microfluidic flow focusing: Drop size and scaling in pressure versus
   flow-rate-driven pumping}.
 \newblock {\em Electrophoresis}, 26(19):3716--3724, 2005.
+
+\bibitem{Xu2008}
+Jian~Hong Xu, S.~W. Li, J.~Tan, and G.~S. Luo.
+\newblock {Correlations of droplet formation in T-junction microfluidic
+  devices: From squeezing to dripping}.
+\newblock {\em Microfluidics and Nanofluidics}, 5(6):711--717, 2008.
 
 \end{thebibliography}

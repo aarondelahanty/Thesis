@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  28 AUG 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.17)  29 AUG 2016 15:06
 entering extended mode
 **./ociamthesismain.tex
 (ociamthesismain.tex
@@ -219,18 +219,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 plet.aux) (conclusions.aux) (appendix1.aux) (appendix2.aux) (appendix3.aux))
 \openout1 = `ociamthesismain.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  ("C:\Users\Aaron Delahanty\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
@@ -296,7 +296,7 @@ Package caption Info: End \AtBeginDocument code.
 File: UoGlogo.PNG Graphic file (type png)
 
 <use UoGlogo.PNG>
-Package pdftex.def Info: UoGlogo.PNG used on input line 52.
+Package pdftex.def Info: UoGlogo.PNG used on input line 51.
 (pdftex.def)             Requested size: 216.81pt x 67.99988pt.
  [1
 
@@ -347,163 +347,165 @@ Chapter 1.
 
 
 
-]
+] [2]
 \openout2 = `systemDevelopment.aux'.
 
  (systemDevelopment.tex
 Chapter 2.
-[2
+[3
 
 
 
-] <sysPhoto.PNG, id=35, 2295.57625pt x 3056.41875pt>
+] <sysPhoto.PNG, id=38, 2295.57625pt x 3056.41875pt>
 File: sysPhoto.PNG Graphic file (type png)
  <use sysPhoto.PNG>
 Package pdftex.def Info: sysPhoto.PNG used on input line 50.
 (pdftex.def)             Requested size: 325.215pt x 432.97916pt.
- [3
+ [4
 
 ]
-<pneumaticSchematic.PNG, id=40, 447.92343pt x 615.0478pt>
+<pneumaticSchematic.PNG, id=42, 516.42938pt x 610.53094pt>
 File: pneumaticSchematic.PNG Graphic file (type png)
  <use pneumaticSchematic.PNG>
 Package pdftex.def Info: pneumaticSchematic.PNG used on input line 59.
-(pdftex.def)             Requested size: 433.62pt x 595.42256pt.
- [4 <./sysPhoto.PNG>] [5 <./pneumaticSchematic.PNG>] <writeVI.PNG, id=49, 276.28218pt x 295.1025pt>
+(pdftex.def)             Requested size: 433.62pt x 512.64687pt.
+ [5 <./sysPhoto.PNG>] [6 <./pneumaticSchematic.PNG>] <writeVI.PNG, id=51, 276.28218pt x 295.1025pt>
 File: writeVI.PNG Graphic file (type png)
  <use writeVI.PNG>
-Package pdftex.def Info: writeVI.PNG used on input line 68.
+Package pdftex.def Info: writeVI.PNG used on input line 70.
 (pdftex.def)             Requested size: 216.81pt x 231.5749pt.
- [6 <./writeVI.PNG>]
-<systemOverview.PNG, id=54, 685.56125pt x 740.7675pt>
+ [7
+
+ <./writeVI.PNG>]
+<systemOverview.PNG, id=59, 685.56125pt x 740.7675pt>
 File: systemOverview.PNG Graphic file (type png)
  <use systemOverview.PNG>
-Package pdftex.def Info: systemOverview.PNG used on input line 81.
+Package pdftex.def Info: systemOverview.PNG used on input line 83.
 (pdftex.def)             Requested size: 433.62pt x 468.55101pt.
- [7 <./systemOverview.PNG>]
-<timeResponse.PNG, id=60, 674.52pt x 673.51625pt>
+ [8 <./systemOverview.PNG>]
+<timeResponse.PNG, id=64, 508.90125pt x 472.01344pt>
 File: timeResponse.PNG Graphic file (type png)
  <use timeResponse.PNG>
-Package pdftex.def Info: timeResponse.PNG used on input line 121.
-(pdftex.def)             Requested size: 433.62pt x 432.981pt.
- [8
+Package pdftex.def Info: timeResponse.PNG used on input line 123.
+(pdftex.def)             Requested size: 433.62pt x 402.20723pt.
+ [9
 
-] [9 <./timeResponse.PNG>]
-<constV.PNG, id=68, 505.89pt x 505.13719pt>
+] [10 <./timeResponse.PNG>]
+<constV.PNG, id=72, 505.89pt x 505.13719pt>
 File: constV.PNG Graphic file (type png)
  <use constV.PNG>
-Package pdftex.def Info: constV.PNG used on input line 134.
+Package pdftex.def Info: constV.PNG used on input line 136.
 (pdftex.def)             Requested size: 433.62pt x 432.98358pt.
-) [10 <./constV.PNG>]
+) [11 <./constV.PNG>]
 \openout2 = `theory.aux'.
 
  (theory.tex
 Chapter 3.
-[11
+[12
 
 
 
-] [12] [13] [14] <resistanceSystem.PNG, id=89, 612.03656pt x 407.27156pt>
+] [13] [14] [15] <resistanceSystem.PNG, id=92, 612.03656pt x 407.27156pt>
 File: resistanceSystem.PNG Graphic file (type png)
  <use resistanceSystem.PNG>
 Package pdftex.def Info: resistanceSystem.PNG used on input line 88.
 (pdftex.def)             Requested size: 433.62pt x 288.54338pt.
- [15 <./resistanceSystem.PNG>] [16] <pressureBalance.PNG, id=97, 618.81187pt x 511.9125pt>
+ [16 <./resistanceSystem.PNG>] [17] <pressureBalance.PNG, id=100, 618.81187pt x 511.9125pt>
 File: pressureBalance.PNG Graphic file (type png)
  <use pressureBalance.PNG>
 Package pdftex.def Info: pressureBalance.PNG used on input line 148.
 (pdftex.def)             Requested size: 325.215pt x 269.03929pt.
-) [17 <./pressureBalance.PNG>]
+ [18 <./pressureBalance.PNG>]) [19]
 \openout2 = `droplet.aux'.
 
  (droplet.tex
 Chapter 4.
-[18
+[20
 
 
 
-] <lwvpr.PNG, id=105, 904.37875pt x 509.905pt>
+] <imageJ.PNG, id=114, 484.81125pt x 468.24937pt>
+File: imageJ.PNG Graphic file (type png)
+ <use imageJ.PNG>
+Package pdftex.def Info: imageJ.PNG used on input line 24.
+(pdftex.def)             Requested size: 433.62pt x 418.82693pt.
+ [21] [22 <./imageJ.PNG>]
+<lwvpr.PNG, id=122, 904.37875pt x 509.905pt>
 File: lwvpr.PNG Graphic file (type png)
  <use lwvpr.PNG>
-Package pdftex.def Info: lwvpr.PNG used on input line 31.
+Package pdftex.def Info: lwvpr.PNG used on input line 39.
 (pdftex.def)             Requested size: 433.62pt x 244.4793pt.
- [19]
-<regimes2.PNG, id=112, 550.30594pt x 797.22844pt>
+ <regimes2.PNG, id=123, 550.30594pt x 797.22844pt>
 File: regimes2.PNG Graphic file (type png)
- <use regimes2.PNG>
-Package pdftex.def Info: regimes2.PNG used on input line 42.
-(pdftex.def)             Requested size: 325.215pt x 471.15141pt.
- [20 <./lwvpr.PNG>] [21 <./regimes2.PNG>]
-<1_poly.PNG, id=121, 674.52pt x 673.51625pt>
-File: 1_poly.PNG Graphic file (type png)
- <use 1_poly.PNG>
-Package pdftex.def Info: 1_poly.PNG used on input line 55.
-(pdftex.def)             Requested size: 433.62pt x 432.981pt.
- [22
 
-] [23 <./1_poly.PNG>]
-Overfull \hbox (4.33366pt too wide) in paragraph at lines 67--74
+<use regimes2.PNG>
+Package pdftex.def Info: regimes2.PNG used on input line 50.
+(pdftex.def)             Requested size: 325.215pt x 471.15141pt.
+ [23 <./lwvpr.PNG>] [24 <./regimes2.PNG>] <1_poly.PNG, id=132, 674.52pt x 673.51625pt>
+File: 1_poly.PNG Graphic file (type png)
+
+<use 1_poly.PNG>
+Package pdftex.def Info: 1_poly.PNG used on input line 63.
+(pdftex.def)             Requested size: 390.25534pt x 389.68393pt.
+ [25
+
+ <./1_poly.PNG>]
+Overfull \hbox (4.33366pt too wide) in paragraph at lines 75--82
 [][] 
  []
 
-[24
+[26
 
-]
+] [27
 
-LaTeX Warning: Reference `fig:menechtransition' on page 25 undefined on input line 85.
-
-
-LaTeX Warning: Reference `fig:menechtransition' on page 25 undefined on input line 85.
-
-
-LaTeX Warning: Citation `Christopher200' on page 25 undefined on input line 98.
-
-[25
-
-] <CrCaABline.PNG, id=136, 361.35pt x 379.4175pt>
+] <CrCaABline.PNG, id=144, 361.35pt x 379.4175pt>
 File: CrCaABline.PNG Graphic file (type png)
  <use CrCaABline.PNG>
-Package pdftex.def Info: CrCaABline.PNG used on input line 113.
+Package pdftex.def Info: CrCaABline.PNG used on input line 119.
 (pdftex.def)             Requested size: 325.215pt x 341.47838pt.
- [26 <./CrCaABline.PNG>]
-<ca_cor.PNG, id=141, 608.2725pt x 541.02126pt>
+ [28 <./CrCaABline.PNG>]
+<ca_cor.PNG, id=149, 672.26157pt x 516.42938pt>
 File: ca_cor.PNG Graphic file (type png)
  <use ca_cor.PNG>
-Package pdftex.def Info: ca_cor.PNG used on input line 122.
-(pdftex.def)             Requested size: 325.215pt x 289.26602pt.
- [27 <./ca_cor.PNG>]
+Package pdftex.def Info: ca_cor.PNG used on input line 128.
+(pdftex.def)             Requested size: 325.215pt x 249.82965pt.
+ [29 <./ca_cor.PNG>]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-) [28]
+) [30
+
+]
 \openout2 = `conclusions.aux'.
 
  (conclusions.tex
 Chapter 5.
-[29
-
-
-
-]) [30]
-\openout2 = `appendix1.aux'.
-
- (appendix1.tex
-Appendix A.
 [31
 
 
 
-] [32] [33]) [34]
+]) [32
+
+]
+\openout2 = `appendix1.aux'.
+
+ (appendix1.tex
+Appendix A.
+[33
+
+
+
+] [34] [35]) [36]
 \openout2 = `appendix2.aux'.
 
  (appendix2.tex
 Appendix B.
-<frontend.PNG, id=169, 689.57625pt x 472.01344pt>
+<frontend.PNG, id=177, 689.57625pt x 472.01344pt>
 File: frontend.PNG Graphic file (type png)
  <use frontend.PNG>
 Package pdftex.def Info: frontend.PNG used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 296.81546pt.
- <backend11.PNG, id=170, 331.2375pt x 394.47375pt>
+ <backend11.PNG, id=178, 331.2375pt x 394.47375pt>
 File: backend11.PNG Graphic file (type png)
 
 <use backend11.PNG>
@@ -513,7 +515,7 @@ Package pdftex.def Info: backend11.PNG used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<backend12.PNG, id=171, 429.85594pt x 371.88937pt>
+<backend12.PNG, id=179, 429.85594pt x 371.88937pt>
 File: backend12.PNG Graphic file (type png)
  <use backend12.PNG>
 Package pdftex.def Info: backend12.PNG used on input line 19.
@@ -522,7 +524,7 @@ Package pdftex.def Info: backend12.PNG used on input line 19.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<backend13.PNG, id=172, 367.3725pt x 373.395pt>
+<backend13.PNG, id=180, 367.3725pt x 373.395pt>
 File: backend13.PNG Graphic file (type png)
  <use backend13.PNG>
 Package pdftex.def Info: backend13.PNG used on input line 26.
@@ -531,82 +533,74 @@ Package pdftex.def Info: backend13.PNG used on input line 26.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<backend14.PNG, id=173, 274.02374pt x 353.06906pt>
+<backend14.PNG, id=181, 274.02374pt x 353.06906pt>
 File: backend14.PNG Graphic file (type png)
  <use backend14.PNG>
 Package pdftex.def Info: backend14.PNG used on input line 33.
-(pdftex.def)             Requested size: 260.17464pt x 335.25208pt.
+(pdftex.def)             Requested size: 238.49231pt x 307.2915pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [35
+) [37
 
 
 
- <./frontend.PNG>] [36 <./backend11.PNG> <./backend12.PNG>] [37 <./backend13.PNG>] [38 <./backend14.PNG>]
+ <./frontend.PNG>] [38 <./backend11.PNG> <./backend12.PNG>] [39 <./backend13.PNG> <./backend14.PNG>]
 \openout2 = `appendix3.aux'.
 
-
-(appendix3.tex
+ (appendix3.tex
 Appendix C.
-<lmstats.PNG, id=192, 567.62062pt x 508.14844pt>
+<lmstats.PNG, id=197, 567.62062pt x 508.14844pt>
 File: lmstats.PNG Graphic file (type png)
  <use lmstats.PNG>
 Package pdftex.def Info: lmstats.PNG used on input line 5.
 (pdftex.def)             Requested size: 433.62pt x 388.20503pt.
- <2_poly.PNG, id=193, 674.52pt x 673.51625pt>
+ <2_poly.PNG, id=198, 674.52pt x 673.51625pt>
 File: 2_poly.PNG Graphic file (type png)
 
 <use 2_poly.PNG>
 Package pdftex.def Info: 2_poly.PNG used on input line 12.
 (pdftex.def)             Requested size: 433.62pt x 432.981pt.
- [39
+ [40
 
 
 
- <./lmstats.PNG>] <3_poly.PNG, id=198, 674.52pt x 673.51625pt>
+ <./lmstats.PNG>] <3_poly.PNG, id=203, 674.52pt x 673.51625pt>
 File: 3_poly.PNG Graphic file (type png)
  <use 3_poly.PNG>
 Package pdftex.def Info: 3_poly.PNG used on input line 19.
 (pdftex.def)             Requested size: 433.62pt x 432.981pt.
- [40 <./2_poly.PNG>]) [41 <./3_poly.PNG>] (ociamthesismain.bbl
+ [41 <./2_poly.PNG>]) [42 <./3_poly.PNG>] (ociamthesismain.bbl
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no ” in font cmr8!
- [42
+ [43
 
 
-]) [43] (ociamthesismain.aux (acknowlegements.aux) (abstract.aux)
+]) [44] (ociamthesismain.aux (acknowlegements.aux) (abstract.aux)
 (introduction.aux) (systemDevelopment.aux) (theory.aux) (droplet.aux) (conclusions.aux) (appendix1.aux) (appendix2.aux)
-(appendix3.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(appendix3.aux)) ) 
 Here is how much of TeX's memory you used:
- 5517 strings out of 493334
- 80276 string characters out of 3136640
- 300057 words of memory out of 3000000
- 8880 multiletter control sequences out of 15000+200000
+ 5527 strings out of 493334
+ 80371 string characters out of 3136640
+ 300120 words of memory out of 3000000
+ 8889 multiletter control sequences out of 15000+200000
  11623 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,9n,42p,1240b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ociamthesismain.pdf (49 pages, 12642583 bytes).
+ 44i,9n,42p,1345b,1444s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on ociamthesismain.pdf (50 pages, 12752453 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
+ 263 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

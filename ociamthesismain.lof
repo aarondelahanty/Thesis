@@ -1,29 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Image of Packaged PDFC}}{4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pneumatic Schematic of PDFC channel}}{5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces LabVIEW write command}}{6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces System Overview of the PDFC}}{7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces PDFC time response}}{9}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces PDFC accuracy and inter-channel variation}}{10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Image of Packaged PDFC}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pneumatic Schematic of PDFC channel}}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces LabVIEW write command}}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces System Overview of the PDFC}}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces PDFC time response}}{10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces PDFC accuracy and inter-channel variation}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Hydraulic Resistance of System}}{15}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pressure Balance at no-flow condition.}}{17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Hydraulic Resistance of System}}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pressure Balance at no-flow condition.}}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{20}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Droplet length as a function of Capillary number across squeezing and dripping regimes}}{21}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Polydispersity}}{23}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{26}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Droplet Length as a function of Corrected Capillary Number}}{27}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Custom ImageJ Droplet Analysis Script}}{22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Droplet Length as a Function of Applied Control Pressure Ratio}}{23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Droplet length as a function of Capillary number across squeezing and dripping regimes}}{24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Polydispersity}}{25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Critical capillary number as a function of continuous phase applied pressure}}{28}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Droplet Length as a function of Corrected Capillary Number}}{29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces LabVIEW Frontend}}{35}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces LabVIEW Backend 1}}{36}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces LabVIEW Backend 2}}{36}
-\contentsline {figure}{\numberline {B.4}{\ignorespaces LabVIEW Backend 3}}{37}
-\contentsline {figure}{\numberline {B.5}{\ignorespaces LabVIEW Backend 4}}{38}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces LabVIEW Frontend}}{37}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces LabVIEW Backend 1}}{38}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces LabVIEW Backend 2}}{38}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces LabVIEW Backend 3}}{39}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces LabVIEW Backend 4}}{39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Linear Regression Statistical Summary}}{39}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Polydispersity at CA = 0.014}}{40}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Polydispersity at CA = 0.018}}{41}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Linear Regression Statistical Summary}}{40}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Polydispersity at CA = 0.014}}{41}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Polydispersity at CA = 0.018}}{42}

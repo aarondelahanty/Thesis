@@ -1,9 +1,9 @@
 \chapter{Background Theory}
 
 \section{Fluid Dynamics at the Microscale}
-Development of a pneumatic pressure driven flow system for use in microfluidic research requires a firm grasp on the transition from 'macro' fluidics to microfluidics. The system operates across a great range of scales drawing and compressing air from a room of several cubic meters that is subsequently used to provide flow in micrometer-wide channels. Following the flow path of the system - compressed air is filtered and directed via large diameter $(~5mm)$ tubing to reagent columns of large diameter $(~2cm)$, where the compressed air acts on the reagent to produce flow through smaller tubing $(<1mm)$ before finally transitioning into the microfluidic device channels (~30um). 
+Development of a pneumatic pressure driven flow system for use in microfluidic research requires a firm grasp on the transition from 'macro' fluidics to microfluidics. The system operates across a great range of scales, drawing and compressing air from a room of several cubic meters that is subsequently used to provide flow in micrometer-wide channels. Following the flow path of the system - compressed air is filtered and directed via large diameter $(\approx 5mm)$ tubing to reagent columns of large diameter $(\approx 2cm)$, where the compressed air acts on the reagent to produce flow through smaller tubing $(\approx 0.5mm)$ before finally transitioning into the microfluidic device channels $(\approx 30um)$. 
 
-The study of fluid dynamics requires the analysis of individual fluid forces, such as gravitational, inertial, viscous, and interfacial forces. An understanding of how these force groups combine is required to define flow behavior. In order to understand the transition from large dimension to small dimension systems it may be useful to understand how these forces relate to system dimensions by the way of scaling laws. Some fluid forces such as inertial forces and gravitational forces are dependent on the \emph{volume} of fluid involved. Other fluid forces are intrinsically defined by the \emph{surface area} of the fluids such as viscous and interfacial forces. More broadly speaking each of the various fluid forces may be dependent on different orders of characteristic length, $l$. For example, inertial force is dependent on density, $\rho$, which may be expressed as mass per volume, or mass per $l^3$, as shown in Equation \vref{eq:inertia}. Similarly, interfacial tension is often defined as the partial differential of the Gibb's free energy over area, where the area term may be expressed in terms of $l^2$, shown in Equation \vref{eq:interfacial} \cite{Baroud2010}.
+The study of fluid dynamics requires the analysis of individual fluid forces, such as gravitational, inertial, viscous, and interfacial forces \cite{Bruus2008}. An understanding of how these force groups combine is required to define flow behavior. In order to understand the transition from large dimension to small dimension systems it may be useful to understand how these forces relate to system dimensions by the way of scaling laws. Some fluid forces such as inertial forces and gravitational forces are dependent on the \emph{volume} of fluid involved. Other fluid forces are intrinsically defined by the \emph{surface area} of the fluids such as viscous and interfacial forces. More broadly speaking each of the various fluid forces may be dependent on different orders of characteristic length, $l$. For example, inertial force is dependent on density, $\rho$, which may be expressed as mass per volume, or mass per $l^3$, as shown in Equation \vref{eq:inertia}. Similarly, interfacial tension is often defined as the partial differential of the Gibb's free energy over area, where the area term may be expressed in terms of $l^2$, shown in Equation \vref{eq:interfacial} \cite{Baroud2010}.
 
 
 \begin{equation}
@@ -30,21 +30,21 @@ From this comes the realization that as systems are miniaturized towards a theor
 
 \section{Droplet Microfluidics Overview}
 
-Droplet microfluidics is a general term used usually to refer to a two component emulsion system. The two liquid components, often refereed to as phases, function as a analyte vessel and a vessel carrier. The analyte vessel is typically aqueous and due to the fact that the droplets are discrete the phase is generally referred to as the discontinuous phase. The carrier solution, generally an oil, preferentially wets the device's channel walls and is responsible for carrying the droplets. The carrier phase is herein referred to as the continuous phase. \cite{Kaminski2016}
+Droplet microfluidics is a general term used usually to refer to a two component emulsion system. The two liquid components, often refereed to as phases, function as a analyte vessel and a vessel carrier. The analyte vessel is typically aqueous and due to the fact that the droplets are discrete the phase is generally referred to as the discontinuous phase. The carrier solution, generally an oil, preferentially wets the device's channel walls and is responsible for carrying the droplets \cite{Kaminski2016}. The carrier phase is herein referred to as the continuous phase. 
 
 Formation of droplets using T-junction devices was first described by Thorsen et al in 2001 \cite{Thorsen2001}. The T-junction device functions by introducing the discontinuous phase perpendicularly into the main continuous phase channel. The force dynamics that dictate droplet break-up were first described to be a balance between viscous shear and interfacial forces. Later, Gastecki et al, showed that at low capillary numbers break-up is no longer driven by viscous forces but is due to a pressure differential caused by blocking of the main channel by the discontinuous phase \cite{Garstecki2006}. This realization lead to the declaration of two stable droplet formation regimes, Dripping and Squeezing. The
 \emph{Dripping Regime} is described by a domination of viscous forces associated with the continuous phase flow which are significantly large to cause shearing of the immiscible thread and the production of a droplet prior to blocking the outlet channel. The \emph{Squeezing Regime} occurs when the discontinuous phase blocks the majority of the outlet channel prior to collapse and droplets are formed by a squeezing effect due to the pressure build up caused by the blocked channel \cite{Shui2007a}. The fluid and flow parameters that determine the acting regime include fluid viscosities, flowrates and interfacial tensions. The transition between these regimes has been described both experimentally and in numerical simulations \cite{Christopher2008,DeMenech2008}. 
 
-\paragraph{Dimensionless Groups} In many cases fluid flow at the microscale can be best categorized by comparing \emph{dimensionless groups} driven by fluid parameters such as viscosity, velocity, density and system geometry, as is the case of the dimensionless group known as Reynold's Number \emph{(Re)} shown in Equation ~\vref{eq:reynolds}. The \emph{Re} value can be described in real world terms as a relation between the inertial forces and viscosity forces at play in a system.
+\paragraph{Dimensionless Groups} In many cases fluid flow at the microscale can be best categorized by comparing \emph{dimensionless groups} driven by fluid parameters such as viscosity, velocity, density and system geometry, as is the case of the dimensionless group known as Reynold's Number (Re) shown in Equation ~\vref{eq:reynolds}. The \emph{Re} value can be described in real world terms as a relation between the inertial forces and viscosity forces at play in a system.
 
 \begin{equation}
 Re =\frac {\rho \nu L}{\mu}
 \label{eq:reynolds}
 \end{equation}
 
-Where $\rho$ is fluid density, $\nu$ is fluid velocity, $L$ is characteristic length, and $\mu$ is fluid viscosity. As the majority of microfluidic systems feature small characteristic lengths, inertial forces are overwhelmed by viscous forces resulting in laminar flow and the dimensionless group becomes less valuable in the differentiation and categorization of different systems \cite{Kleinstreuer2013}.
+Where $\rho$ is fluid density, $\nu$ is fluid velocity, $L$ is characteristic length, and $\mu$ is fluid viscosity. As the majority of microfluidic systems feature small characteristic lengths, inertial forces are overwhelmed by viscous forces resulting in laminar flow and the \emph{Re} value becomes less valuable in the differentiation and categorization of different systems \cite{Kleinstreuer2013}.
 
-The Capillary number \emph{(Ca)} is a dimensionless group that compares the relative contribution of interfacial forces and viscous forces. The capillary number is especially useful in discussion of two-phase microfluidic systems because it neglects any inertial forces and is capable of describing droplet formation behavior as influenced by solution viscosity and surface energies. The \emph{Ca} is defined as shown in Equation \vref{eq:ca} \cite{D??azNafr??a2013}.
+The Capillary number (Ca) is a dimensionless group that compares the relative contribution of interfacial forces and viscous forces. The capillary number is especially useful in discussion of two-phase microfluidic systems because it neglects any inertial forces and is capable of describing droplet formation behavior as influenced by solution viscosity and surface energies. The \emph{Ca} is defined as shown in Equation \vref{eq:ca} \cite{D??azNafr??a2013}.
 
 \begin{equation}
 Ca =\frac {\mu u}{\gamma}
@@ -92,7 +92,7 @@ The hydraulic resistance varies based on specific channel geometry but the prese
 
 The fluidic resistance due to the reagent reservoirs and tubing leading to the microfluidic device contribute to overall system resistance, and therefore flowrate. However, if the reservoir and tubing widths are substantially larger than the microfluidic device's channels the resistance and therefore contribution to system's pressure loss may be neglected.
 
-For the purpose of quantifying the contribution to total pressure loss of tubing in a generic system the following arbitrary values are applied: Assume that $P_4$ is equivalent to atmospheric pressure, 0 Pa, and $L_1=L_3= 0.500 \ m$, $L_2=0.010 \ m$, viscosity $n=1 \ cP = 0.001 \ Pa \ s$, tube radius$r=0.00025 \ m$ and channel height $h=0.00005m$. Take $P_1 = 500 \ mbar = 50 \ kPa$ which is mid operational range for the system.
+For the purpose of quantifying the contribution to total pressure loss of tubing in a generic system the following arbitrary values are applied: Assume that $P_4$ is equivalent to atmospheric pressure, 0 Pa, and $L_1=L_3= 0.500 \ m$, $L_2=0.010 \ m$, viscosity $n=1 \ cP = 0.001 \ Pa \ s$, tube radius $r=0.00025 \ m$ and channel height $h=0.00005m$. Take $P_1 = 500 \ mbar = 50 \ kPa$ which is mid operational range for the system.
 
 Consider the simple case shown in Figure \vref{fig:resistanceSystem}, and that hydraulic resistances in straight circular and square channels can be approximated as shown in Equations \vref{eq:resCirc} and \vref{eq:resSquare}, respectively \cite{Bruus2008}.
 
@@ -122,7 +122,7 @@ Q = \frac{50,000}{(2 (3.26*10^7) + 4.54*10^{13})} = 1.10  \times 10^{-9} \frac{m
 \label{eq:resFlow}
 \end{equation}
 
-Assuming that the system is at steady state and therefore the microfluidic structure (tubing and PDMS) is not expanding due to internal pressure we can infer that by conservation of mass and assumed incompressible fluids that the volumetric flowrate is constant across each of the system pressure points shown in Figure ~\vref{fig:resistanceSystem}. Taking this constant flowrate and the previously found resistances individual pressure drops can be calculated as shown in Equation \vref{eq:resPress}.
+Assuming that the system is at steady state and therefore the microfluidic structure (tubing and PDMS) is not expanding due to internal pressure we can infer by conservation of mass and incompressible fluids that the volumetric flowrate is constant across each of the system pressure points shown in Figure \vref{fig:resistanceSystem}. Taking this constant flowrate and the previously calculated, resistances individual pressure drops can be calculated as shown in Equation \vref{eq:resPress}.
 
 \begin{equation*}
 P_2 - P_1 = (R_1) Q = 3.59 \times 10^{-2} Pa
@@ -149,4 +149,19 @@ As the contribution to pressure loss is so small $(<< 1 \%)$, it may be appropri
 \caption[Pressure Balance at no-flow condition.]{Pressure balance at no-flow condition, where $P_{C App}$ and $P_{D App}$ are the pressures applied to the continuous and discontinuous phases and $P_{C Loc}$ and $P_{D ALoc}$ are the local pressures at the T-junction. The dashed lines represent the channel geometry present between the device inlets and the T-junction.} 
 \label{fig:pressureBalance} 
 \end{figure}
+
+One further point, highlighting the difference between volumetric and pressure-driven flows, is the existence of a quasi-equilibrium no flow condition. As the system is moved towards the lowest operational pressure ratios, the aqueous phase comes to a quasi equilibrium no-flow state, as previously reported by Ward \emph{et al.} \cite{Ward2005}. If the pressure ratio is decreased any further(either by increasing $P_{Oil}$ or decreasing $P_{H_2O}$) back-flow will occur, in which the continuous phase begins displacing the aqueous phase upstream towards the reservoir. This quasi equilibrium state may be described as a balance of forces between the pressure of the two phases and the Laplace pressure differential across the liquid-liquid interface, described as shown in Equation \vref{eq:noflow}.
+
+\begin{equation}
+P_{D_{Loc}} + P_{Laplace} = P_{C_{Loc}} 
+\label{eq:noflow}
+\end{equation}
+
+Where Laplace pressure can be roughly approximated given $\gamma$ is the interfacial tension between the two phases, $r$ is the radius of curvature of the interface as shown in Equation \vref{eq:laplace} \cite{Bruus2008}:
+\begin{equation}
+ P_{Laplace} = \frac{2 \gamma}{r}
+\label{eq:laplace}
+\end{equation}
+
+It should be noted that here $P_{D_{Loc}}$ and $P_{C_{Loc}}$ represent the pressures of the two phases local to the T junction and that there is some unknown pressure drop between the applied control pressures at the inlet reservoirs and these local pressures. 
 
